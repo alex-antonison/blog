@@ -1,19 +1,19 @@
 ---
 title: "About"
-image: profile.jpg
+image: images/alex-main-picture.jpg
 about:
-  template: jolla
+  template: solana
   links:
     - icon: twitter
       text: Twitter
-      href: https://twitter.com
+      href: https://twitter.com/adantonison
     - icon: linkedin
       text: LinkedIn
-      href: https://linkedin.com
+      href: https://www.linkedin.com/in/alexantonison/
     - icon: github
       text: Github
-      href: https://github.com
+      href: https://github.com/alex-antonison
 
 ---
 
-About this blog
+Over my career, I have performed in Data Engineering and Science roles.  One consistent focus of mine has been working with external and internal customers to help identify opportunities to more effectively work with data in support of business goals.  This has ranged from building automated data pipelines, building out self-service analytics platforms, supporting the construction and deployment of machine learning models, to helping optimize IT infrastructure to better serve an analytic team.
