@@ -1,5 +1,5 @@
 preview:
 	quarto preview .
 
-publsih:
-	quarto publish
+publish:
+	quarto publish gh-pages --no-prompt
