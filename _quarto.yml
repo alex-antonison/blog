@@ -2,17 +2,17 @@ project:
   type: website
 
 website:
-  title: "blog"
+  title: "Alex Antonison's Blog"
   navbar:
     right:
       - about.qmd
       - icon: github
-        href: https://github.com/
+        href: https://github.com/alex-antonison
       - icon: twitter
-        href: https://twitter.com
+        href: https://twitter.com/adantonison
 format:
   html:
-    theme: cosmo
+    theme: superhero
     css: styles.css
 
 

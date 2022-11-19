@@ -1,0 +1,74 @@
+---
+title: "Ethical use of algorithms with data"
+author: "Alex Antonison"
+date: "2019-03-09"
+categories: [ethics, data, algorithms, machine learning, ai]
+image: "Tay_bot_logo.jpg"
+---
+
+# Ethical use of algorithms with data
+
+### Preface 
+
+Before I talk about my views on ethics in the realm of Data Science, I first want to talk about how I got into Data Science.  I spent the first two years of my career doing some analysis accompanied by mostly Data Engineering before I knew it was Data Engineering.  At this two year mark in 2014, I was at a point where I wanted to figure out where I wanted to take my career next.  After a bit of searching, I landed on the field of Data Science since it seemed like a perfect fit with my love of statistics and working with data.  Like with anything, my first approach was to search and try and find as much information on the topic as possible.  I took a few Coursera courses, followed _top data scientists on twitter_, read blogs, and listened to podcasts.  More often than not, the topics were usually around applications of machine learning, interesting papers on machine learning models, or interviews with industry experts.  However, periodically there was a post or podcast that would catch my eye on a topic like "gender biased word embeddings." I quickly realized that although Data Science has the propensity for good, it also has a potential to harm individuals or entire communities.  I began actively searching for these issues and came upon a couple of good articles that covered a wide variety of issues such as [Biased Algorithms Are Everywhere, and No One Seems to Care](https://www.technologyreview.com/s/608248/biased-algorithms-are-everywhere-and-no-one-seems-to-care/)
+
+However, before I go any further, I would like to introduce two concepts that are at the center of this post.
+
+- **Machine Learning:** "Machine learning algorithms build a mathematical model of sample data, known as "training data", in order to make predictions or decisions without being explicitly programmed to perform the task." - [https://en.wikipedia.org/wiki/Machine_learning](https://en.wikipedia.org/wiki/Machine_learning)
+- **Algorithmic Bias:** "Algorithmic bias occurs when a computer system reflects the implicit values of the humans who are involved in coding, collecting, selecting, or using data to train the algorithm." - [https://en.wikipedia.org/wiki/Algorithmic_bias](https://en.wikipedia.org/wiki/Algorithmic_bias)
+
+With that covered, I will move on to discuss a handful of cases where models are either biased, unethically created, or unethically used.
+
+### Gender biased word embeddings
+
+Before I talk about how a [word embedding](https://en.wikipedia.org/wiki/Word_embedding) can be gender biased, first I would like to discuss what is a word embedding.  A word embedding is a useful natural language processing tool where a model can represent the relationships between words as mathematical values to allow for associations such as "man:king" with "woman:queen" and "paris:france" with "tokyo:japan".  Cool, right? However, this bias has been extended to "man:programmer" with "woman:homemaker". Not cool.  A common model used is Word2Vec developed by Google back in 2013 trained on Google News texts.  Unfortunately, because the data this model was trained on was gender biased, so are the results.  But there is hope! Researchers have done work to both quantify the bias and come up with methods to "debias" the embeddings in [
+Man is to Computer Programmer as Woman is to Homemaker? Debiasing Word Embeddings](https://arxiv.org/abs/1607.06520).  For more on this, I recommend [How Vector Space Mathematics Reveals the Hidden Sexism in Language](https://www.technologyreview.com/s/602025/how-vector-space-mathematics-reveals-the-hidden-sexism-in-language/).
+
+### Mortgage loan interest rate bias
+
+I find this to be a more traditional instance where financial institutions set out to use "big data" with "machine learning" to find ways to infer interest rates based on geography or characteristics of applicants.  This is referred to as "Algorithmic Strategic Pricing". A result of this, [based on a study done by UC Berkly](http://faculty.haas.berkeley.edu/morse/research/papers/discrim.pdf), African Americans and Latino borrowers pay more on purchase and refinance loans than White and Asian ethnicity borrowers. "The lenders may not be specifically targeting minorities in their pricing schemes, but by profiling non-shopping applicants they end up targeting them" said [Adair Morse](http://faculty.haas.berkeley.edu/morse/).
+
+For more information, you can check out [Minority homebuyers face widespread statistical lending discrimination, study finds](http://newsroom.haas.berkeley.edu/minority-homebuyers-face-widespread-statistical-lending-discrimination-study-finds/) or the study itself [Consumer-Lending Discrimination in the Era of FinTech](http://faculty.haas.berkeley.edu/morse/research/papers/discrim.pdf)
+
+### Image recognition bias
+
+Image recognition has become an everyday utility in society with many big tech companies using it in their product offerings like Google, Microsoft, and most notably, Facebook.  However, without any industry benchmarks to ensure that these facial recognition applications perform well on people of all races, genders, and age, there are instances where either the systems simply do not work or the systems are offensive.
+
+A more notable instance of  a facial recognition system failing to work was discovered by Joy Buolamwini, who is an African American PhD student at MIT's Center for Civic Media. At the time of her discovery, she was a Computer Science undergraduate at Georgia Tech.  In her undergrad, she was working on a research project to teach a computer to play "peek-a-boo" and found out that although the system had no issues recognizing her lighter skinned roommates, it had difficulty working with her.  Her solution to this was to wear a white Halloween mask which would then detect her as white. More on this can be found here [Ghosts in the Machine](https://www.pbs.org/wgbh/nova/article/ai-bias/)
+
+This issue is not limited to Joy Buolamwini's research, but could also be seen in Microsoft's Kinect for the X-box.  Back in 2010, it was observed that Microsoft's Kinect often times would not work on people with darker skin.  [Is Microsoft’s Kinect Racist?](https://www.pcworld.com/article/209708/Is_Microsoft_Kinect_Racist.html).  However, additionally worth noting is Microsoft advocating for there to be more regulation around image recognition in their blog post [Facial recognition technology: The need for public regulation and corporate responsibility](https://blogs.microsoft.com/on-the-issues/2018/07/13/facial-recognition-technology-the-need-for-public-regulation-and-corporate-responsibility/).
+
+### Microsoft Tay twitter bot
+
+I like using Microsoft's Tay twitter bot as an example regarding ethics since it is an instance where the researchers themselves weren't being unethical, but failed to consider how their model could be interacted with and manipulated.  To provide a brief summary, Microsoft's Tay twitter bot was a research experiment conducted where they  built an artificial intelligence twitter bot that was supposed to learn how to mimic the speech of a 19 year old American girl by interacting with people on twitter.  However, what they failed to consider was a series of internet users  deciding to bombard the twitter bot with hateful speech.  The end result required Microsoft to turn the twitter bot off after 16 hours.
+
+This is an instance where although the researchers themselves were not being unethical, they failed to take into consideration how their twitter bot could be manipulated.  As we build products, it is important not only to think about what the purpose of the model is but how it could be used to harm other people.
+
+### Facebook Cambridge Analytica scandal
+
+An ethics blog post would be incomplete without mentioning the  [Facebook–Cambridge Analytica data scandal](https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal).  To briefly summarize, this is an instance where an organization used a survey app through Facebook to collect information from users for supposedly academic purposes.  However, through manipulating Facebook's app design, they were also able to collect the information of not only the users that agreed to the survey, but all of the users’ friends information as well.   Furthermore, instead of using this information for academic purposes, they used it for both the Ted Cruz and Donald Trump political campaigns.
+
+The two main takeaways here were that Cambridge Analytica both collected people's information without their consent and then used the information for purposes  beyond the consent given.  Needless to say, collecting people's information without their consent is clearly unethical.  However, even when  collecting people's personal information  ethically , it is  important  that measures are taken to ensure their information is protected and not misused.
+
+### Ways to improve
+
+A few closing thoughts on ways the Data Science industry can improve:
+
+- Build teams of people from diverse backgrounds to ensure underrepresented communities are not negatively impacted by biased models.
+-  Audit algorithms AND  the data sets used to train models.
+- Encourage companies to provide more information to users and researchers to help them better understand potential pitfalls and biases that may exist in their tools.
+
+### Additional sources
+
+If you are still interested in looking more into this topic, I highly recommend checking out the following:
+
+- Articles
+  - [“We’re in a diversity crisis”: cofounder of Black in AI on what’s poisoning algorithms in our lives](https://www.technologyreview.com/s/610192/were-in-a-diversity-crisis-black-in-ais-founder-on-whats-poisoning-the-algorithms-in-our/)
+  - [Machine bias risk assessments in criminal sentencing](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing)
+- Podcasts
+  - [Data Skeptic - Data Ethics](https://dataskeptic.com/blog/episodes/2018/data-ethics)
+  - [Linear Digressions - Facial recognition, society, and the law](http://lineardigressions.com/episodes/2018/12/30/facial-recognition-society-and-you)
+  - [Linear Digressions - When is open data too open?](http://lineardigressions.com/episodes/2018/2/25/when-is-open-data-too-open)
+- Books
+  - [Weapons of Math Destruction](https://weaponsofmathdestructionbook.com/)
+
