@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Alex Antonison">
+<meta name="dcterms.date" content="2019-10-04">
+
+<title>Alex Antonison’s Blog - What are the different roles in data?</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Alex Antonison’s Blog</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/alex-antonison"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/adantonison"><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">What are the different roles in data?</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">data scieince</div>
+                <div class="quarto-category">data engineering</div>
+                <div class="quarto-category">data analyst</div>
+                <div class="quarto-category">role</div>
+                <div class="quarto-category">career</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Alex Antonison </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">October 4, 2019</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<section id="what-are-the-different-roles-in-data" class="level1">
+<h1>What are the different roles in data?</h1>
+<p><em>The intended audience for this post are people interested in getting into data or businesses looking to use data to drive business value. With this in mind, I attempted to stay high level and provide enough information and key words for someone to find more in-depth resources on any given topic. Additionally, when highlighting skills, I focus on what I have observed being commonly used in industry based on experience, combing through job postings, and networking.</em></p>
+<section id="working-in-data" class="level3">
+<h3 class="anchored" data-anchor-id="working-in-data">Working in data</h3>
+<p>In my experience, working in data can at times be a bit confusing and overwhelming because of the sheer breadth of skills and techniques that are needed to process, manage, and analyze data. In this post, I am going to group these sets of skills into different roles, highlight the order in which they should be built out in an organization, and emphasize the importance of only focusing on one role at a time. As someone who has done work in each of these areas, my effectiveness was significantly reduced when I had to wear multiple hats.The four roles I will be focusing on in this post are Data Analyst, Data Engineer, Data Scientist, and Machine Learning Engineer. While some of these roles can be broken down to be more specific, my goal of this blog post is to stay high level and emphasize broad concepts around each role. Additionally, there are other important roles such as Data Governance and Privacy and Data Curation which I will not be covering as this post is meant to be an introduction to a data team in an organization.</p>
+<p>And one last thing, although I do not advise trying to perform multiple roles at once, I think it can be beneficial if given the opportunity to try different roles and see what you enjoy most.</p>
+</section>
+<section id="the-different-roles" class="level3">
+<h3 class="anchored" data-anchor-id="the-different-roles">The different roles</h3>
+<p><img src="data-organization-diagram.png" class="img-fluid"></p>
+<section id="the-data-analyst---describes-data" class="level4">
+<h4 class="anchored" data-anchor-id="the-data-analyst---describes-data"><strong>The Data Analyst - Describes Data</strong></h4>
+<p>In my opinion, the Data Analyst is at the heart of a data team. Their focus should be to describe data to help drive business value.</p>
+<p>A Data Analyst should be the first role a company should hire and the expectations should be for them to come in and work with stakeholders and leadership to understand a company’s goals and business problems and how data can help drive value. Once a company’s goals and business problems have been clearly defined, the Data Analyst should seek out data, wrangle it to make it <code>tidy</code> (see <a href="https://vita.had.co.nz/papers/tidy-data.pdf">Tidy Data</a> by Hadley Wickham), and then deliver reports and/or dashboards to communicate the results. The Data Analyst is what I consider more of an operational role that helps a business measure key indicators to help understand the state of their business as well as make data driven decisions.</p>
+<p><em>Key areas:</em> data wrangling - data exploration - business intelligence - building dashboards (Key Performance Indicators (KPI), Operational) using tools like <a href="https://www.tableau.com/">Tableau</a>, <a href="https://powerbi.microsoft.com/en-us/">PowerBI</a>, <a href="https://looker.com/">Looker</a> - building reports using tools like SQL Server Reporting Services (<a href="https://docs.microsoft.com/en-us/sql/reporting-services/create-deploy-and-manage-mobile-and-paginated-reports?view=sql-server-2017">SSRS</a>) - SQL - (optional but recommended) R or Python</p>
+</section>
+<section id="the-data-engineer---scales-data" class="level4">
+<h4 class="anchored" data-anchor-id="the-data-engineer---scales-data"><strong>The Data Engineer - Scales Data</strong></h4>
+<p>The Data Engineer’s role is to scale an organization’s data ingestion and management.</p>
+<p>Once a company has a firm understanding of their goals and business problems where data can help drive value, a Data Engineer can come in scale and build upon existing data processes. By scale, I mean the <a href="https://whatis.techtarget.com/definition/3Vs">3Vs of data</a>(volume, variety, and velocity) and the ability to build automated data pipelines capable of bringing in data at the frequency a business needs to support applications, reports, dashboards, and analyses. Not only should a Data Engineer focus on <a href="https://en.wikipedia.org/wiki/Extract,_transform,_load">Extract, transform, load (ETL)</a> or <a href="https://en.wikipedia.org/wiki/Extract,_load,_transform">Extract, load, transform (ELT)</a>, they should also have a good understanding of how to build optimized data warehouses/marts/stores to be useful for end users. Lastly, a Data Engineer should understand the concept of building production code, and by that I mean it needs to work consistently and reliably. In the event of an inevitable failure, it needs to fail reliably and have adequate logging so the issue can be debugged and resolved as efficiently as possible.</p>
+<p><em>Key Areas:</em> concept of production code - optimized data warehousing/mart/store - <a href="https://en.wikipedia.org/wiki/Extract,_transform,_load">Extract, transform, load (ETL)</a> or <a href="https://en.wikipedia.org/wiki/Extract,_load,_transform">Extract, load, transform (ELT)</a> - data pipelines - automation - streaming data - web scraping - tools like <a href="https://www.talend.com/">Talend</a> or <a href="https://www.informatica.com">Informatica</a> - SQL - Python - docker</p>
+<p><strong>—————————————————————</strong></p>
+<p><em>Most companies can be highly successful doing Data Analytics and Engineering well. Without these two areas in place, a Data Scientist will be ineffective since they will simply be doing a combination of Data Analytics/Engineering. Often times this leads to mismatched skill sets and expectations on both the side of the organization as well as the Data Scientist.</em></p>
+<p><strong>—————————————————————</strong></p>
+</section>
+<section id="the-data-scientist---models-data" class="level4">
+<h4 class="anchored" data-anchor-id="the-data-scientist---models-data"><strong>The Data Scientist - Models Data</strong></h4>
+<p>The role of the Data Scientist is to use machine learning and statistical techniques to develop models of data capable of predictions or prescriptions.</p>
+<p>These models should have a focus on enhancing a business’ existing processes or develop new products that are not as feasible without machine learning techniques. This is more of a strategic role where often times the goal is to build upon the existing Data Analytic work. Similar to that of a Data Analyst, a Data Scientist will need to do data exploration and visualization to gain a better understanding of the data. Additionally, they will need to interact with business stakeholders to gain a firm understanding of company goals and business problems to help guide what models can be built that can drive value.</p>
+<p><em>Key Areas:</em> feature engineering - statistical analysis - building / tuning / evaluating machine learning models - natural language processing - computer vision - R or Python - SQL</p>
+</section>
+<section id="the-machine-learning-engineer---scale-models" class="level4">
+<h4 class="anchored" data-anchor-id="the-machine-learning-engineer---scale-models"><strong>The Machine Learning Engineer - Scale Models</strong></h4>
+<p>The role of the Machine Learning Engineer is to scale models by deploying and managing them in a production environment.</p>
+<p>A Machine Learning Engineer should work closely with the Data Science, Data Engineering, and Software Development teams to understand how a model needs to be deployed and build out necessary tools, APIs, or batch processes. Additionally, a Machine Learning Engineer needs to think about putting in place tools that will evaluate model performance and look for model drift to evaluate if a model needs to be retrained (great blog about this topic <a href="https://mlinproduction.com/model-retraining/">The Ultimate Guide to Model Retraining</a>). Like a Data Engineer, they need to have a concept of production code since once a model is deployed, it is often their responsibility to ensure predictions are not only being returned but that they meet the necessary expectations.</p>
+<p><em>Key Areas:</em> model drift - model retraining - the concept of production code - evaluation of models in production - machine learning - feature engineering - Python - SQL - docker - automation</p>
+</section>
+</section>
+<section id="overall-suggestions-when-working-in-data" class="level3">
+<h3 class="anchored" data-anchor-id="overall-suggestions-when-working-in-data">Overall Suggestions when working in Data</h3>
+<ul>
+<li><strong>Focus on the business problem</strong> - When starting data projects, it is easy to get distracted by all of the different available technologies. However, it is important to first focus on solving the business problem at hand versus using current “state of the art” solutions.</li>
+<li><strong>Be intentional with technology selection</strong> - Whenever introducing a new piece of technology or programming language to a company, it is crucial to consider the consequences. Adding new technologies increases the overall complexity of a company’s technology stack as well as often times reducing collaboration and consumption of work across teams.</li>
+<li><strong>Source Control</strong> - Regardless of role, I highly recommend all code (including SQL) is managed in a source control platform. By managing code through a source control platform, you can ensure code is accessible and changes to it over time can be tracked and managed. Depending on your team’s maturity and needs, I suggest checking out either <a href="https://trunkbaseddevelopment.com/">Trunk Based</a> or a <a href="https://nvie.com/posts/a-successful-git-branching-model/">Gitflow</a> Development Strategy.
+<ul>
+<li>Some popular source control platforms are <a href="https://github.com/">GitHub</a>, <a href="https://about.gitlab.com/">GitLab</a>, and <a href="https://bitbucket.org/product">BitBucket</a></li>
+<li>In instances where Data Analysts or Data Scientists are doing analyses or ad-hoc requests, I recommend having a single repository where the code for these requests are stored and managed with loose processes around merging. This will help ensure the code is located in a more discoverable and central location. With that, a more restrictive repository(s) should be in place that requires reviews for managing code related to specific project work.</li>
+</ul></li>
+<li><strong>Cloud computing</strong> is becoming more common place when working with data in organizations. AWS, Microsoft Azure, and Google all offer free tiers that can allow you to get some hands on experience even if your organization does not use cloud computing.</li>
+<li><strong>Package management</strong> - With respect to R and Python, I suggest looking into utilities to manage packages to help with reproducibility.
+<ul>
+<li>For R you I suggest using <a href="https://github.com/rstudio/renv">renv</a> over packrat as it is much more efficient at managing packages.</li>
+<li>For Python, I suggest using <a href="https://docs.python.org/3/library/venv.html">venv</a>. It is simple and I have never had issues using it yet.</li>
+<li>If you are new to Python, I also recommend checking out <a href="https://www.anaconda.com/distribution/">Anaconda</a>. However, I will admit my experiences with using it to manage and share environments has not been great. I only recommend Anaconda as it allows you to more easily get started in Python.</li>
+</ul></li>
+<li><strong>Docker</strong> - While managing packages is helpful, docker allows you to manage the entire environment of a script which ensures reproducibility. <em>Dev Ops people will love you.</em>
+<ul>
+<li>A good resource for doing this in R is <a href="https://colinfay.me/docker-r-reproducibility/">An Introduction to Docker for R Users</a> by Colin Fay</li>
+<li>A good resource for Python is <a href="https://www.fullstackpython.com/docker.html">Docker</a></li>
+</ul></li>
+</ul>
+</section>
+<section id="updates" class="level3">
+<h3 class="anchored" data-anchor-id="updates">Updates</h3>
+<section id="section" class="level4">
+<h4 class="anchored" data-anchor-id="section">2019-12-08</h4>
+<ul>
+<li>renv is now offered on cran, yay!</li>
+<li>Changed the method of suggest python environment management to being venv based on research and testing for consistently and reliably setting up and managemetn environments in python.</li>
+</ul>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
