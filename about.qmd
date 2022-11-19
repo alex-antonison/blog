@@ -16,4 +16,6 @@ about:
 
 ---
 
-Over my career, I have performed in Data Engineering and Science roles.  One consistent focus of mine has been working with external and internal customers to help identify opportunities to more effectively work with data in support of business goals.  This has ranged from building automated data pipelines, building out self-service analytics platforms, supporting the construction and deployment of machine learning models, to helping optimize IT infrastructure to better serve an analytic team.
+I am an ex-Healthcare Data Engineer that has transitioned to working in Environmental Science. My approach is to take common techniques used in managing and processing Healthcare data to help streamline data in the Environmental Science space. I do this by building use-case specific data platforms that make Environmental Science data accessible and easy to use.
+
+I currently work both for the Data Science Institute at MTSU (https://www.mtsu.edu/datascience/index.php) as well as my own business (https://www.antonison-cg.com/).
