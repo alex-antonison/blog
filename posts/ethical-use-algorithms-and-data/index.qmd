@@ -4,9 +4,12 @@ author: "Alex Antonison"
 date: "2019-03-09"
 categories: [ethics, data, algorithms, machine learning, ai]
 image: "Tay_bot_logo.jpg"
+format:
+  html:
+    toc: true
+    toc-location: left
+    toc-title: Table of Contents
 ---
-
-# Ethical use of algorithms with data
 
 ### Preface 
 

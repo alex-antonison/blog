@@ -4,11 +4,16 @@ author: "Alex Antonison"
 date: "2019-10-04"
 categories: [data scieince, data engineering, data analyst, role, career]
 image: "data-organization-diagram.png"
+format:
+  html:
+    toc: true
+    toc-location: left
+    toc-title: Table of Contents
 ---
 
-# What are the different roles in data?
+### Preface
 
-*The intended audience for this post are people interested in getting into data or businesses looking to use data to drive business value.  With this in mind, I attempted to stay high level and provide enough information and key words for someone to find more in-depth resources on any given topic.  Additionally, when highlighting skills, I focus on what I have observed being commonly used in industry based on experience, combing through job postings, and networking.*
+The intended audience for this post are people interested in getting into data or businesses looking to use data to drive business value.  With this in mind, I attempted to stay high level and provide enough information and key words for someone to find more in-depth resources on any given topic.  Additionally, when highlighting skills, I focus on what I have observed being commonly used in industry based on experience, combing through job postings, and networking.
 
 ### Working in data
 
@@ -79,4 +84,4 @@ A Machine Learning Engineer should work closely with the Data Science, Data Engi
 #### 2019-12-08
 
 * renv is now offered on cran, yay!
-* Changed the method of suggest python environment management to being venv based on research and testing for consistently and reliably setting up and managemetn environments in python. 
+* Changed the method of suggest python environment management to being venv based on research and testing for consistently and reliably setting up and management environments in python. 
