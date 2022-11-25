@@ -128,7 +128,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -165,7 +165,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
       <h1 class="title">venv is a Data Professional’s Best Friend</h1>
@@ -202,19 +202,33 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of Contents</h2>
+   
+  <ul>
+  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a></li>
+  <li><a href="#venvrenv" id="toc-venvrenv" class="nav-link" data-scroll-target="#venvrenv">venv/renv</a></li>
+  <li><a href="#limitations" id="toc-limitations" class="nav-link" data-scroll-target="#limitations">Limitations</a></li>
+  <li><a href="#other-virtual-environment-tools" id="toc-other-virtual-environment-tools" class="nav-link" data-scroll-target="#other-virtual-environment-tools">Other virtual environment tools</a></li>
+  </ul>
+</nav>
+</nav>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
-<section id="venv-is-a-data-professionals-best-friend" class="level1">
-<h1>venv is a Data Professional’s best friend</h1>
+<section id="preface" class="level3">
+<h3 class="anchored" data-anchor-id="preface">Preface</h3>
 <p>Have you ever tried to share a project with a colleague and they struggled to run it? Have you ever spent hours trying to get a machine learning library to work? If so, there are solutions out there that can help with this! In this post, I will talk about a utility, virtual environments, that can be used to manage specific packages.</p>
-<section id="venvrenv" class="level2">
-<h2 class="anchored" data-anchor-id="venvrenv">venv/renv</h2>
+</section>
+<section id="venvrenv" class="level3">
+<h3 class="anchored" data-anchor-id="venvrenv">venv/renv</h3>
 <p>When starting up a project, the first step I take is to spin up a virtual environment. In python, my personal favorite is the virtual environment utility built directly into python, <a href="https://docs.python.org/3/tutorial/venv.html">python venv</a>. In R, I like to use the package <a href="https://rstudio.github.io/renv/">renv</a> supported by RStudio. I do this for the following reasons:</p>
 <ul>
 <li>Clean slate: When installing packages in a virtual environment, you can either use the latest versions of packages without worrying about impacting other projects or choose to use specific versions of packages.</li>
@@ -240,16 +254,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Rscript</span> <span class="at">-e</span> <span class="st">"renv::snapshot()"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>This will update the <code>renv.lock</code> file that should be used when sharing your code to allow setting up a new environment from it. This is most easily used when working with R in a project in RStudio.</p>
 </section>
-<section id="limitations" class="level2">
-<h2 class="anchored" data-anchor-id="limitations">Limitations</h2>
+<section id="limitations" class="level3">
+<h3 class="anchored" data-anchor-id="limitations">Limitations</h3>
 <p>While virtual environments are great at managing packages needed to run code, it is limited to just that. There are other aspects of running a project such as application or operating system dependencies. To completely solve for reproducing the environment for running code, you can explore using <a href="https://www.docker.com/">docker</a>, a utility that will allow for capturing your entire environment which includes the Operating System and supporting applications. There is a steeper learning curve to this, and I plan on dedicating entire post(s) to the topic of how docker is a more comprehensive solution to reproducibility.</p>
 </section>
-<section id="other-virtual-environment-tools" class="level2">
-<h2 class="anchored" data-anchor-id="other-virtual-environment-tools">Other virtual environment tools</h2>
+<section id="other-virtual-environment-tools" class="level3">
+<h3 class="anchored" data-anchor-id="other-virtual-environment-tools">Other virtual environment tools</h3>
 <p>For python, <a href="https://pipenv.pypa.io/en/latest/">pipenv</a> and <a href="https://python-poetry.org/">poetry</a> are virtual environment utilities that allow for managing various versions of packages in a project. You can manage packages ranging from selecting a specific version of a package to letting any version of that package be installed. While these tools can be helpful in managing packages and package dependencies, they come with additional complexity and a learning curve.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
