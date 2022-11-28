@@ -13,11 +13,11 @@ format:
 
 ### Preface
 
-In the world of data, data is considered "big data" or "not big data." This can be problematic since when an organization doesn't have "big data," they don't take time to automate processing it nor take care in efficiently managing it. On the other hand, an organization may have "big data" and they spend a significant amount of effort and money managing it, even if there is no clear use-case. Because of this, the focus should shift from "big data" to being around "impactful data."
+In the world of data, data is considered "big data" or "not big data." This can be problematic since when an organization doesn't have "big data," more often than not they do not take time to automate processing their data nor take care in efficiently managing it. On the other hand, an organization may have "big data" and they spend a significant amount of effort and money managing it, even if there is no clear use-case. Because of this, I think the focus should shift from "big data" to instead, "impactful data."
 
 ### What is data?
 
-Before explaining what impactful data is, it is helpful to define what is data. As a Data Engineer, to me data is both a collection of values to represent an event, action, environment, etc. along with information about how the data was collected to provide context, often referred to as metadata. To see a more detailed definition of data, [Wikipedia](https://en.wikipedia.org/wiki/Data) has a good articule around it.
+Before explaining what impactful data is, it is helpful to define what is data. As a Data Engineer, to me data is both a collection of values to represent an TODO: explain system. along with information about how the data was collected to provide context, often referred to as metadata. To see a more detailed definition of data, [Wikipedia](https://en.wikipedia.org/wiki/Data) has a good articule around it.
 
 ### What is impactful data?
 
