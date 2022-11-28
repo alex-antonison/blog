@@ -13,27 +13,29 @@ format:
 
 ### Preface
 
-In the world of data, data is considered "big data" or "not big data." This can be problematic since when an organization doesn't have "big data," more often than not they do not take time to automate processing their data nor take care in efficiently managing it. On the other hand, an organization may have "big data" and they spend a significant amount of effort and money managing it, even if there is no clear use-case. Because of this, I think the focus should shift from "big data" to instead, "impactful data."
+In the world of data, data is categorized as either "big data" or just "data." This can be problematic since when an organization doesn't have "big data," more often than not they do not take time to automate processing their data nor take care in efficiently managing it. On the other hand, an organization may have what they consider "big data" and they spend a significant amount of effort and money managing it, even if there is no clear use-case. Because of this, I think the focus should shift from "big data" to "impactful data."
 
 ### What is data?
 
-Before explaining what impactful data is, it is helpful to define what is data. As a Data Engineer, to me data is both a collection of values to represent an TODO: explain system. along with information about how the data was collected to provide context, often referred to as metadata. To see a more detailed definition of data, [Wikipedia](https://en.wikipedia.org/wiki/Data) has a good articule around it.
+Before explaining what impactful data is, a quick definition about what is data. As a Data Engineer, to me data is a collection of values to represent a transaction, measurement, or an event along with information provide context. An example of this could be data coming off sensors placed in a river. The sensor is set to collect measuremetns of pH, Temperature, and Dissolved Oxygen. Each measurement has a timestamp associated with it along with infomration about when and where the sensor was placed, when it was collected, quality check information about the sensor, etc. For a more detailed definition of data, [Wikipedia](https://en.wikipedia.org/wiki/Data) has a good articule around it.
 
 ### What is impactful data?
 
-To simply put it, impactful data is data that has a clear use-case that can help solve a problem or answer a question which will help make a decision. This could range from being used to create a KPI metric dashboard, data collected in a scientic study, to data that can help drive Government Environmental policy. The one requirement for data to be impactful is that it needs to have a clear use-case. In the absence of a clear use-case, my recommendation would be to archive the data in cheaper object storage, such as [AWS S3](https://aws.amazon.com/s3/).
+To simply put it, impactful data has a clear use-case that can help solve a problem and/or answer a question that will help inform a decision. This could range from being used to create a KPI metric dashboard, data collected in a scientic study, to data that can help drive Government Environmental policy. In the absence of a clear use-case, my recommendation would be to document the data and archive it in cheaper object storage, such as [AWS S3](https://aws.amazon.com/s3/).
 
-### Should you manage small volumes of impactful data?
+### Should you automate processing and management of small volumes of impactful data?
 
 Yes! Regardless of the volume of the impactful data, taking the time to streamline processing and managing the data can have a wide variety of benefits.
 
 #### Automating Data Processing
 
-When data processing is automated, it reduces the time it takes to gain access to the data and the amount of potential errors from a manual process. This could start as a simple Python or R script run locally. As the volume of data increases, this could eventually evovle into building a Serverless Data Pipeline in AWS using services like [AWS Lambda](https://aws.amazon.com/lambda/), [AWS Step Functions](https://aws.amazon.com/step-functions/), and/or [AWS Fargate](https://aws.amazon.com/fargate/). Depending on situation, there are pros and cons between running locally and deploying a data pipeline in a cloud platform. Regardless of the implementation, automated data processing leads to faster access to the data and less errors.
+Automating data processing reduces the time it takes to gain access to the data and insights from it. It also reduces the amount of potentual human error when manually processing data. This could start as a simple Python or R script run locally. As the volume and frequency of data increases, this could evovle into building a Serverless Data Pipeline in AWS using services like [AWS Lambda](https://aws.amazon.com/lambda/), [AWS Step Functions](https://aws.amazon.com/step-functions/), and/or [AWS Fargate](https://aws.amazon.com/fargate/). Depending on situation, there are pros and cons between running locally and deploying a data pipeline in a cloud platform. Regardless of the implementation, automating data processing leads to faster access to the data and insights along with less human errors.
 
 #### Data Management
 
-When does it make sense to build a data warehouse and data marts? Well..."it depends." If you are pulling in data from multiple desperate sources that you need to normalize together into a single harmonized data model, then a data warehouse and curated data marts may be appropriate. If the data is coming from a single source, it may be sufficient to streamline processing it and serving the results up via a [Quicksight Dashboard](https://aws.amazon.com/quicksight/) or a [Juicebox App](https://www.juiceanalytics.com/solution-juicebox).
+TODO: Talk about documenting data sources. THen talk about data warehouse and marts. Different tiers of data management.
+
+When does it make sense to build a data warehouse and marts? Well..."it depends." If you are pulling in data from multiple desperate sources that you need to normalize together into a single harmonized data model, then a data warehouse and curated data marts may be appropriate. If the data is coming from a single source, it may be sufficient to streamline processing it and serving the results up via a [Quicksight Dashboard](https://aws.amazon.com/quicksight/) or a [Juicebox App](https://www.juiceanalytics.com/solution-juicebox).
 
 ### When does volume of data matter?
 
