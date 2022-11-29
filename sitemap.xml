@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://www.alex-antonison.com/talks.html</loc>
+    <lastmod>2022-11-29T19:13:37.596Z</lastmod>
+  </url>
+  <url>
     <loc>https://www.alex-antonison.com/about.html</loc>
-    <lastmod>2022-11-28T14:15:34.711Z</lastmod>
+    <lastmod>2022-11-29T19:13:38.220Z</lastmod>
   </url>
   <url>
     <loc>https://www.alex-antonison.com/posts/different-roles-in-data/index.html</loc>
-    <lastmod>2022-11-28T14:15:35.479Z</lastmod>
+    <lastmod>2022-11-29T19:13:38.660Z</lastmod>
   </url>
   <url>
     <loc>https://www.alex-antonison.com/posts/ethical-use-algorithms-and-data/index.html</loc>
-    <lastmod>2022-11-28T14:15:35.895Z</lastmod>
+    <lastmod>2022-11-29T19:13:39.084Z</lastmod>
   </url>
   <url>
     <loc>https://www.alex-antonison.com/posts/venv-is-a-data-professionals-best-friend/index.html</loc>
-    <lastmod>2022-11-28T14:15:36.235Z</lastmod>
+    <lastmod>2022-11-29T19:13:39.412Z</lastmod>
   </url>
   <url>
     <loc>https://www.alex-antonison.com/index.html</loc>
-    <lastmod>2022-11-28T14:15:36.579Z</lastmod>
+    <lastmod>2022-11-29T19:13:39.744Z</lastmod>
   </url>
 </urlset>

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Alex Antonison’s Blog - About</title>
+<title>Alex Antonison’s Blog - Talks</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -33,6 +33,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
@@ -79,11 +80,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./talks.html">
+    <a class="nav-link active" href="./talks.html" aria-current="page">
  <span class="menu-text">Talks</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page">
+    <a class="nav-link" href="./about.html">
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -108,41 +109,65 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<div class="quarto-about-solana column-body">
-  <div class="about-entity">
-    <div class="entity-contents">
-      <header id="title-block-header" class="quarto-title-block default">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About</h1>
+<h1 class="title">Talks</h1>
 </div>
+
+
+
 <div class="quarto-title-meta">
+
+    
+  
+    
   </div>
-</header> <div class="about-links">
-  <a href="https://twitter.com/adantonison" class="about-link">
-    <i class="bi bi-twitter"></i>
-     <span class="about-link-text">Twitter</span>
-  </a>
-  <a href="https://www.linkedin.com/in/alexantonison/" class="about-link">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">LinkedIn</span>
-  </a>
-  <a href="https://github.com/alex-antonison" class="about-link">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">Github</span>
-  </a>
-</div>
-      <div class="about-contents"><main class="content" id="quarto-document-content">
-<p>A Data Engineer with 10 years of experience building data platforms that has transitioned to working in Environmental Science. My approach is to take common techniques used for processing and managing data in Healthcare and apply them to Environmental Science. I accomplish this by building use-case specific data platforms that make Environmental Science data accessible and easy to use.</p>
-<p>I currently work with the <a href="https://www.mtsu.edu/datascience/index.php">Data Science Institute at MTSU</a> and I have my own consulting business, <a href="https://www.antonison-cg.com/">Antonison Consulting Group</a>.</p>
+  
+
+</header>
+
+<table class="table">
+<thead>
+<tr class="header">
+<th>Date</th>
+<th>Conference/Group</th>
+<th>Talk Link</th>
+<th>Abstract</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>2022-11-16</code></td>
+<td><a href="https://pittsburgh.setac.org/">SETAC North America Annual Meeting</a></td>
+<td><a href="https://onedrive.live.com/view.aspx?resid=D430825279B24722!220652&amp;ithint=file%2cpptx&amp;authkey=!AI5mqBP8R_utXzo">The multi-sensor data system (MSDS): The strategy and execution of a user-friendly system that puts water quality data, from a variety of different manufacturers, in the hands of scientists</a></td>
+<td>Water quality data is vital to assess both risk and remedy effectiveness in or near water bodies. Although individual manufacturers of water quality devices typically have soft that allows for data downloading and visualizations, the integration of data from different sensors is left to the technical scientist(s). To address this problem, we created the Multi-Sensor Data System (MSDS). This system is designed to automate the ingestion of varying file types into a data lake, process that data into warehouses and marts, and serve up the integrated results via interactive dashboards. Included in this system is the ability for user-defined quality assurance filters, with update in real-time. The processing time need from raw data file upload to dashboard availability is approximately two minutes. This system was built using Amazon Web Services serverless technologies with a focus on low cost and maintenance, while maintaining fast response times and high reliability.</td>
+</tr>
+<tr class="even">
+<td><code>2022-09-28</code></td>
+<td><a href="https://www.theanalyticssummit.com/">Nashville Analytics Summit</a></td>
+<td><a href="https://1drv.ms/p/s!AiJHsnlSgjDUjbttTTfApWTDeBncSQ?e=MnbZb7">Strategy and execution of a multi-sensor data system</a></td>
+<td>Recent advances in technology have led to the collection of data at speeds and volumes exponentially greater than ever before. In parallel, data management tools have been developed which allows those that possess these tools to more easily gather, process and interpret data. In this presentation, the MTSU Data Science Institute will demonstrate the concept and execution of their Multi-Sensor Data System (MSDS) using a water quality dataset to demonstrate functionality. This system was designed to automate the ingestion of varying files into a data lake, process into a data warehouse and marts, and serve up the results via a dashboard, in minutes. This system was built using AWS serverless technologies with a focus on low cost and maintenance, with high performance and reliability.</td>
+</tr>
+<tr class="odd">
+<td><code>2022-04-12</code></td>
+<td>MTSU Computational and Data Science Seminar</td>
+<td><a href="https://1drv.ms/p/s!AiJHsnlSgjDUjbtw76fMLWT7YpGE-Q?e=aqeZB1">Strategy and execution of a multi-sensor data system</a></td>
+<td>Recent advances in technology have led to the collection of data at speeds and volumes exponentially greater than ever before. In parallel, data management tools have been developed alongside this expansion which allows those that possess these tools to more easily gather, access, process, and interpret data. In this presentation, the MTSU Data Science Institute will demonstrate the concept and execution of their Multi-Sensor Data System (MSDS) using an applied water quality dataset from an ongoing project to demonstrate its functionality. This system was designed to automate the ingestion of multiple different data files and serve up the results via an interactive dashboard, in minutes. This cloud platform was built using Amazon Web Services serverless cloud technology with an emphasis on low cost and maintenance, with high performance and reliability.</td>
+</tr>
+<tr class="even">
+<td><code>2021-11-17</code></td>
+<td><a href="https://www.meetup.com/data-nerds/">Nashville Data Nerds</a></td>
+<td><a href="https://docs.google.com/presentation/d/1VFzRmNI7essY6A5vRldiTcZQ-oDXorBB6kfVsEXUWQE/edit?usp=sharing">A Nerdy Dive into Data Tools</a></td>
+<td>There are a wide variety of ways to approach processing and analyzing data. This month, Alex Antonison will lead a conversation about the tools and programming languages he uses to improve his productivity when building data and analytic solutions. At the end he will review the results of the Data Nerds Tooling survey with the group to see what tools come out on top!</td>
+</tr>
+</tbody>
+</table>
 
 
-</main></div>
-    </div>
-    <img src="images/alex-main-picture.jpg" class="about-image
-  rounded " style="width: 15em;">
-  </div>
-</div>
- <!-- /main -->
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -163,6 +188,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const clipboard = new window.ClipboardJS('.code-copy-button', {
     target: function(trigger) {
       return trigger.previousElementSibling;
