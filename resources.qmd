@@ -11,7 +11,7 @@ format:
 
 ### Overview
 
-A general resource page for noting different tools, platforms, and programming languages I use when building data solutions.
+ This is a list of resources that I keep in mind when trying to solve specific solutions around data. This is not meant to be a comprehensive list of all tools available for building data solutions! I also include some day-to-day tools I use to help manage things such projects, time, and communication. 
 
 ### Development
 
