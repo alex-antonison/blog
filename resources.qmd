@@ -42,6 +42,7 @@ Programming languages I consider when building data platforms, doing statistical
 |<a href="https://www.scala-lang.org/" target="_blank">Scala</a>|For writing performant Spark data applications.|
 |<a href="https://go.dev/" target="_blank">Go</a>|Building efficient data microservices.|
 |<a href="https://www.w3schools.com/sql/" target="_blank">SQL</a>|Structured query language for pulling data from relational databases.|
+|<a href="https://www.gnu.org/software/bash/" target="_blank">bash</a>|A shell scripting language that can be helpful in automating tasks.|
 
 ### IT Tools
 
