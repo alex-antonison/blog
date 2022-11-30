@@ -55,7 +55,7 @@ Programming languages I consider when building data platforms, doing statistical
 |<a href="http://mypy-lang.org/" target="_blank">mypy</a>|Clean Code|mypy is a static type checker that helps solve the problem in python with dynamic typing|
 |<a href="https://docs.pytest.org/" target="_blank">pytest</a>|Testing|pytest is my unit testing tool of choice for it's extensibility for building test harnesses|
 |<a href="https://greatexpectations.io/" target="_blank">great-expectations</a>|Testing|Supports data quality testing and validation|
-|<a href="https://tdda.readthedocs.io/en/latest/" target="_blank">TDDA</a>|Testing|A package that streamlines developing data solutions in AWS|
+|<a href="https://tdda.readthedocs.io/en/latest/" target="_blank">Test-Driven Data Analysis</a>|Testing|A package that supports integrating data quality tests with unit tests such as pytest|
 |<a href="https://python-poetry.org/" target="_blank">poetry</a>|Environment Management|A python package that supports managing virtual environments|
 |<a href="https://dvc.org/" target="_blank">data version control(dvc)</a>|ML Ops|Utility that provides a streamlined approach for managing machine learning models from development to production.|
 |<a href="https://aws-sdk-pandas.readthedocs.io/en/stable/" target="_blank">awswrangler</a>|AWS SDK|AWS Development|A package that streamlines developing data solutions in AWS|
