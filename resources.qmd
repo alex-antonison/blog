@@ -59,7 +59,8 @@ This section includes a wide variety of tools and platforms used to help build a
 |<a href="https://www.squarespace.com/" target="_blank">MarkSquarespacedown</a>|Website builder for managing business website.|
 |<a href="https://draw.io/" target="_blank">draw.io</a>|Free tool for creating ERD diagrams, process flows, and AWS Architectures|
 |<a href="https://www.juiceanalytics.com/" target="_blank">Juicebox Analytics</a>|Data Storytelling tool|
-|<a href="https://www.markdownguide.org/" target="_blank">Markdown</a>|Markup language for writing documentation.|
+|<a href="https://www.markdownguide.org/getting-started/" target="_blank">Markdown</a>|Markup language for writing documentation.|
+|<a href="https://github.com/ohmybash/oh-my-bash" target="_blank">oh-my-bash</a>|Framework for managing bash configuration. There is also a zshell equivalent, <a href="https://github.com/ohmyzsh/ohmyzsh" target="_blank">oh-my-zsh</a> equivalent.|
 
 ### Visual Studio Code Extensions
 
