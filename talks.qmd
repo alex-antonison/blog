@@ -1,6 +1,5 @@
 ---
 title: "Talks"
-image: images/alex-main-picture.jpg
 talks:
   template: solana
 ---
