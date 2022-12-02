@@ -15,10 +15,10 @@ This is a list of resources that I keep in mind when building data platforms. I 
 
 ### Development
 
-Software Engineering tools I use when building data solutions.
+Development tools I use when building data solutions.
 
 | Development Tools                                                                   | Description                                                                                                                                                                                                                                                                                      |
-|-------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|------------------|------------------------------------------------------|
 | <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>     | A code editor that supports a wide variety of languages and uses-cases with extensions                                                                                                                                                                                                           |
 | <a href="https://colab.research.google.com/" target="_blank">Google Colab</a>       | Hosted jupyter notebooks for running python. Has access to GPU/TPU if you want to explore ML.                                                                                                                                                                                                    |
 | <a href="https://github.com/tmux/tmux" target="_blank">tmux</a>                     | A terminal utility to allows running command line commands server-side.                                                                                                                                                                                                                          |
@@ -36,7 +36,7 @@ Software Engineering tools I use when building data solutions.
 Programming languages I consider when building data platforms, doing statistical analysis, machine learning, etc.
 
 | Language                                                              | Purpose                                                                                                                     |
-|-----------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
+|--------------------------|---------------------------------------------|
 | <a href="https://www.python.org/" target="_blank">Python</a>          | A general usage language that supports building data platforms, data analytics, statistical analysis, and machine learning. |
 | <a href="https://www.r-project.org/about.html" target="_blank">R</a>  | A language built for performing statistical analysis, machine learning, and data analysis.                                  |
 | <a href="https://julialang.org/" target="_blank">Julia</a>            | A high performant language for scientific computing.                                                                        |
@@ -48,7 +48,7 @@ Programming languages I consider when building data platforms, doing statistical
 ### Python Development Tools
 
 | Tool                                                                                           | Type                   | Purpose                                                                                                           |
-|------------------------------------------------------------------------------------------------|------------------------|-------------------------------------------------------------------------------------------------------------------|
+|--------------------------|---------------|-------------------------------|
 | <a href="https://black.readthedocs.io/en/stable/" target="_blank">black</a>                    | Clean Code             | black is a python code formatter that helps keep code consistently formatted across teams                         |
 | <a href="https://pycqa.github.io/isort/" target="_blank">isort</a>                             | Clean Code             | isort helps organize python imports                                                                               |
 | <a href="https://flake8.pycqa.org/en/latest/" target="_blank">flake8</a>                       | Clean Code             | flake8 is a code linter that enforces coding styles such as flagging unused imports                               |
@@ -63,7 +63,7 @@ Programming languages I consider when building data platforms, doing statistical
 ### Favorite Python Analysis Tools
 
 | Tool                                                                                   | Type                           | Purpose                                                                                                                   |
-|----------------------------------------------------------------------------------------|--------------------------------|---------------------------------------------------------------------------------------------------------------------------|
+|-----------------------|----------------|---------------------------------|
 | <a href="https://jupyter.org/" target="_blank">jupyter notebooks</a>                   | Analysis Tool                  | Jupyter notebooks allow for running python in a cell format and being able to immediately see the results                 |
 | <a href="https://spark.apache.org/docs/latest/api/python/" target="_blank">PySpark</a> | Data Processing                | Provides a Python interface to creating Spark applications                                                                |
 | <a href="https://pandas.pydata.org/" target="_blank">pandas</a>                        | Dataframe                      | pandas allows for importing data into a tabular data structure and can perform cleaning and analysis activities in python |
@@ -78,14 +78,14 @@ Programming languages I consider when building data platforms, doing statistical
 ### R Development Tools
 
 | Tool                                                                                 | Type                   | Purpose                                                                                  |
-|--------------------------------------------------------------------------------------|------------------------|------------------------------------------------------------------------------------------|
+|----------------------------|---------------|-----------------------------|
 | <a href="https://rstudio.github.io/renv/articles/renv.html" target="_blank">renv</a> | Environment Management | A tool for managing R packages used for a project.                                       |
 | <a href="https://posit.co/" target="_blank">RStudio</a>                              | IDE                    | A IDE tailored to running R code. It can also run Python but I have not tested this out. |
 
 ### R Analysis Tools
 
 | Tool                                                               | Type                  | Purpose                                                                                      |
-|--------------------------------------------------------------------|-----------------------|----------------------------------------------------------------------------------------------|
+|------------------------|----------------|---------------------------------|
 | <a href="https://www.tidyverse.org/" target="_blank">tidyverse</a> | Analysis              | An ecosystem of r-packages that support doing a wide variety of data science/analytics tasks |
 | <a href="https://shiny.rstudio.com/" target="_blank">r-shiny</a>   | Interactive Dashboard | A framework for creating interactive dashboard sites with R.                                 |
 
@@ -94,7 +94,7 @@ Programming languages I consider when building data platforms, doing statistical
 This section includes a wide variety of tools and platforms used to help build and deploy data platforms.
 
 | Item                                                                                                  | Purpose                                                                                                                                                              |
-|-------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|----------------------------|--------------------------------------------|
 | <a href="https://www.nomachine.com/" target="_blank">nomachine</a>                                    | Tool for remotely connecting to Linux desktop.                                                                                                                       |
 | <a href="https://www.vmware.com/products/workstation-pro.html" target="_blank">VMWare Workstation</a> | Virtual Machine for running a Windows VM on a Linux computer.                                                                                                        |
 | <a href="https://aws.amazon.com/" target="_blank">Amazon Web Services</a>                             | Cloud computing platform of choice for building and deploy data solutions.                                                                                           |
@@ -113,7 +113,7 @@ This section includes a wide variety of tools and platforms used to help build a
 Visual Studio Code Extensions I find useful.
 
 | Visual Studio Code Extension                                                                                                                        |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+|------------------------------------------------------------------------|
 | <a href="https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github" target="_blank">GitHub Pull Requests and Issues</a> |
 | <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python" target="_blank">Python</a>                                           |
 | <a href="https://marketplace.visualstudio.com/items?itemName=quarto.quarto" target="_blank">Quarto</a>                                              |
@@ -129,7 +129,7 @@ Visual Studio Code Extensions I find useful.
 Productivity tools and general use programs.
 
 | Item                                                                         | Purpose                                                                                                                                                                       |
-|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-----------------------|-------------------------------------------------|
 | <a href="https://trello.com/" target="_blank">Trello</a>                     | Productivity tool used for planning out work                                                                                                                                  |
 | <a href="https://workspace.google.com/" target="_blank">Google Workspace</a> | Frequently use Google Docs and Google Sheets                                                                                                                                  |
 | <a href="https://brave.com/" target="_blank">Brave</a>                       | A privacy first browser built on Chrome                                                                                                                                       |
