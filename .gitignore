@@ -132,3 +132,4 @@ dmypy.json
 /_site/
 .Rproj.user
 .Rhistory
+.RData
