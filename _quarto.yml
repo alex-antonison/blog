@@ -10,6 +10,8 @@ website:
       - about.qmd
       - icon: github
         href: https://github.com/alex-antonison
+      - icon: linkedin
+        href: https://www.linkedin.com/in/alexantonison/
       - icon: twitter
         href: https://twitter.com/adantonison
 format:
