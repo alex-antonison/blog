@@ -2,21 +2,28 @@ project:
   type: website
 
 website:
-  title: "Alex Antonison's Blog"
   navbar:
+    left:
+      - text: "Blog"
+        href: index.qmd
+      - text: Talks
+        file: talks.qmd
+      - text: Resources
+        file: resources.qmd
+      - text: Projects
+        file: projects.qmd
     right:
-      - talks.qmd
-      - resources.qmd
-      - about.qmd
       - icon: github
         href: https://github.com/alex-antonison
       - icon: linkedin
         href: https://www.linkedin.com/in/alexantonison/
-      - icon: twitter
-        href: https://twitter.com/adantonison
+  site-url: "https://www.alex-antonison.com/"
+  repo-url: https://github.com/alex-antonison/blog
+  repo-branch: main
+
 format:
   html:
-    theme: superhero
+    theme: [superhero, custom.scss]
     css: styles.css
 
 
