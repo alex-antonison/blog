@@ -23,13 +23,13 @@ format:
 
 ![](images/alex_headshot.jpg){.profile-pic}
 
-A Data Engineer with 10+ years of experience building data platforms that has transitioned to working in Environmental Science. My approach is to take common techniques used for processing and managing data in Healthcare and apply them to Environmental Science. I accomplish this by building use-case specific data solutions that make Environmental Science data accessible and easy to use.
+Hello, I’m Alex Antonison. I'm a Data Engineer with 10+ years of experience building data platforms that has transitioned to working in Environmental Science. My approach is to take common techniques used for processing and managing data in Healthcare and apply them to Environmental Science. I accomplish this by building use-case specific data solutions that make Environmental Science data accessible and easy to use.
 
 :::
 
 ## 💼 Get In Touch
 
-Are you looking for a Data/Machine Learning Engineer to help scale your data or machine learning applications? I am currently looking for my next opportunity.
+Are you looking for a Data Engineer to help scale your data solutions? I am currently looking for my next opportunity.
 
 Email me at `adantonison@gmail.com`, or send me a message on [![](images/icon-linkedin.png){width="3%"}](https://www.linkedin.com/in/alexantonison/) if you'd like to chat!
 
