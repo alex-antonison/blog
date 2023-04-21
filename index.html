@@ -70,9 +70,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
+      searchColumns: ["listing-date","listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -176,93 +176,59 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="blog-posts" class="level2">
 <h2 class="anchored" data-anchor-id="blog-posts">📮 Blog Posts</h2>
-<div id="listing-blog-listings" class="quarto-listing quarto-listing-container-default">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="reproducibility,virtual environment,renv,venv,poetry" data-listing-date-sort="1612569600000" data-listing-file-modified-sort="1682107360155" data-listing-reading-time-sort="2.63">
-<div class="thumbnail">
-<p><a href="./posts/venv-is-a-data-professionals-best-friend/index.html"> <img src="./posts/venv-is-a-data-professionals-best-friend/python-virtual-envs1.webp" class="thumnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/venv-is-a-data-professionals-best-friend/index.html">
-<h3 class="no-anchor listing-title">
-venv is a Data Professional’s Best Friend
-</h3>
-<div class="listing-subtitle">
+<div id="listing-blog-listings" class="quarto-listing quarto-listing-container-table">
 
-</div>
-<div class="listing-description">
-Have you ever tried to share a project with a colleague and they struggled to run it? Have you ever spent hours trying to get a machine learning library to…
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/venv-is-a-data-professionals-best-friend/index.html">
-<div class="listing-date">
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+<th>
+Date
+</th>
+<th>
+Title
+</th>
+<th>
+Author
+</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr data-index="0" data-listing-date-sort="1612569600000" data-listing-file-modified-sort="1682107688526" data-listing-reading-time-sort="2.63" data-listing-title-sort="venv is a Data Professional's Best Friend" data-listing-filename-sort="index.qmd">
+<td class="listing-date">
 2/6/21
-</div>
-<div class="listing-author">
+</td>
+<td class="listing-title">
+<a href="./posts/venv-is-a-data-professionals-best-friend/index.html" class="title">venv is a Data Professional’s Best Friend</a>
+</td>
+<td class="listing-author">
 Alex Antonison
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="data scieince,data engineering,data analyst,role,career" data-listing-date-sort="1570147200000" data-listing-file-modified-sort="1682107360155" data-listing-reading-time-sort="8.155">
-<div class="thumbnail">
-<p><a href="./posts/different-roles-in-data/index.html"> <img src="./posts/different-roles-in-data/data-organization-diagram.png" class="thumnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/different-roles-in-data/index.html">
-<h3 class="no-anchor listing-title">
-What are the different roles in data?
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-The intended audience for this post are people interested in getting into data or businesses looking to use data to drive business value. With this in mind, I attempted to…
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/different-roles-in-data/index.html">
-<div class="listing-date">
+</td>
+</tr>
+<tr data-index="1" data-listing-date-sort="1570147200000" data-listing-file-modified-sort="1682107688526" data-listing-reading-time-sort="8.155" data-listing-title-sort="What are the different roles in data?" data-listing-filename-sort="index.qmd">
+<td class="listing-date">
 10/4/19
-</div>
-<div class="listing-author">
+</td>
+<td class="listing-title">
+<a href="./posts/different-roles-in-data/index.html" class="title">What are the different roles in data?</a>
+</td>
+<td class="listing-author">
 Alex Antonison
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="ethics,data,algorithms,machine learning,ai" data-listing-date-sort="1552089600000" data-listing-file-modified-sort="1682107360155" data-listing-reading-time-sort="7.1">
-<div class="thumbnail">
-<p><a href="./posts/ethical-use-algorithms-and-data/index.html"> <img src="./posts/ethical-use-algorithms-and-data/Tay_bot_logo.jpg" class="thumnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/ethical-use-algorithms-and-data/index.html">
-<h3 class="no-anchor listing-title">
-Ethical use of algorithms with data
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-Before I talk about my views on ethics in the realm of Data Science, I first want to talk about how I got into Data Science. I spent the first two years of my career doing…<em></em>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/ethical-use-algorithms-and-data/index.html">
-<div class="listing-date">
+</td>
+</tr>
+<tr data-index="2" data-listing-date-sort="1552089600000" data-listing-file-modified-sort="1682107688526" data-listing-reading-time-sort="7.1" data-listing-title-sort="Ethical use of algorithms with data" data-listing-filename-sort="index.qmd">
+<td class="listing-date">
 3/9/19
-</div>
-<div class="listing-author">
+</td>
+<td class="listing-title">
+<a href="./posts/ethical-use-algorithms-and-data/index.html" class="title">Ethical use of algorithms with data</a>
+</td>
+<td class="listing-author">
 Alex Antonison
-</div>
-</a>
-</div>
-</div>
-</div>
+</td>
+</tr>
+</tbody>
+
+</table>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
