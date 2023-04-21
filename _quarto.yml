@@ -2,6 +2,12 @@ project:
   type: website
 
 website:
+  page-footer:
+    center:
+      - icon: linkedin
+        href: https://www.linkedin.com/in/alexantonison/
+      - icon: github
+        href: https://github.com/alex-antonison
   navbar:
     left:
       - text: "Blog"
