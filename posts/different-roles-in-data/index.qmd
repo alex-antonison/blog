@@ -2,8 +2,6 @@
 title: "What are the different roles in data?"
 author: "Alex Antonison"
 date: "2019-10-04"
-categories: [data scieince, data engineering, data analyst, role, career]
-image: "data-organization-diagram.png"
 format:
   html:
     toc: true

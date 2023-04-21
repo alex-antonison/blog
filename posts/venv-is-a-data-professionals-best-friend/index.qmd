@@ -2,8 +2,6 @@
 title: "venv is a Data Professional's Best Friend"
 author: "Alex Antonison"
 date: "2021-02-06"
-categories: [reproducibility, virtual environment, renv, venv, poetry]
-image: "python-virtual-envs1.webp"
 format:
   html:
     toc: true
