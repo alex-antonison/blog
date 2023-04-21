@@ -10,6 +10,8 @@ website:
         file: talks.qmd
       - text: Resources
         file: resources.qmd
+      - text: Projects
+        file: projects.qmd
     right:
       - icon: github
         href: https://github.com/alex-antonison

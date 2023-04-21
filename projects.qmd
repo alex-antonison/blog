@@ -1,0 +1,11 @@
+---
+title: "Projects"
+talks:
+  template: solana
+format:
+  html:
+    toc: true
+    toc-location: left
+    toc-title: Table of Contents
+---
+
