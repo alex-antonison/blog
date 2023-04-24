@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/the-process-of-data/index.html",
       "/posts/venv-is-a-data-professionals-best-friend/index.html",
       "/posts/different-roles-in-data/index.html",
       "/posts/ethical-use-algorithms-and-data/index.html"

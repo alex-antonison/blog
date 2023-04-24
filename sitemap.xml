@@ -2,30 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.alex-antonison.com/posts/ethical-use-algorithms-and-data/index.html</loc>
-    <lastmod>2023-04-24T17:30:03.349Z</lastmod>
+    <lastmod>2023-04-24T19:30:00.154Z</lastmod>
   </url>
   <url>
     <loc>https://www.alex-antonison.com/posts/different-roles-in-data/index.html</loc>
-    <lastmod>2023-04-24T17:30:04.361Z</lastmod>
+    <lastmod>2023-04-24T19:30:01.118Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.alex-antonison.com/posts/the-process-of-data/index.html</loc>
+    <lastmod>2023-04-24T19:30:01.530Z</lastmod>
   </url>
   <url>
     <loc>https://www.alex-antonison.com/posts/venv-is-a-data-professionals-best-friend/index.html</loc>
-    <lastmod>2023-04-24T17:30:04.797Z</lastmod>
+    <lastmod>2023-04-24T19:30:01.982Z</lastmod>
   </url>
   <url>
     <loc>https://www.alex-antonison.com/projects.html</loc>
-    <lastmod>2023-04-24T17:30:05.161Z</lastmod>
+    <lastmod>2023-04-24T19:30:02.326Z</lastmod>
   </url>
   <url>
     <loc>https://www.alex-antonison.com/index.html</loc>
-    <lastmod>2023-04-24T17:30:05.589Z</lastmod>
+    <lastmod>2023-04-24T19:30:02.778Z</lastmod>
   </url>
   <url>
     <loc>https://www.alex-antonison.com/resources.html</loc>
-    <lastmod>2023-04-24T17:30:06.181Z</lastmod>
+    <lastmod>2023-04-24T19:30:03.414Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.alex-antonison.com/resume.html</loc>
+    <lastmod>2023-04-24T19:30:04.766Z</lastmod>
   </url>
   <url>
     <loc>https://www.alex-antonison.com/talks.html</loc>
-    <lastmod>2023-04-24T17:30:06.601Z</lastmod>
+    <lastmod>2023-04-24T19:30:05.222Z</lastmod>
   </url>
 </urlset>
