@@ -2,11 +2,6 @@
 title: "The Process of Data"
 author: "Alex Antonison"
 date: "2023-04-24"
-format:
-  html:
-    toc: true
-    toc-location: left
-    toc-title: Table of Contents
 ---
 
 Do you have complex processes that you are struggling to streamline or automate? If so, my recommended approach has some key benefits:
