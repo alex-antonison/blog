@@ -20,6 +20,8 @@ website:
         file: resources.qmd
       - text: Projects
         file: projects.qmd
+      - text: Resume
+        file: resume.qmd
     right:
       - icon: github
         href: https://github.com/alex-antonison
