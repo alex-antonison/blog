@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.475">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Alex Antonison">
+<meta name="dcterms.date" content="2023-03-01">
+
+<title>Alex Antonison’s Blog - Tool Selection Framework</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html">
+ <span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../talks.html">
+ <span class="menu-text">Talks</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../resources.html">
+ <span class="menu-text">Resources</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../projects.html">
+ <span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../resume.html">
+ <span class="menu-text">Resume</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/alex-antonison"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/alexantonison/"><i class="bi bi-linkedin" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Tool Selection Framework</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Alex Antonison </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">March 1, 2023</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#defining-a-project" id="toc-defining-a-project" class="nav-link" data-scroll-target="#defining-a-project">Defining a Project</a></li>
+  <li><a href="#data-tool-metrics" id="toc-data-tool-metrics" class="nav-link" data-scroll-target="#data-tool-metrics">Data Tool Metrics</a></li>
+  <li><a href="#data-tools" id="toc-data-tools" class="nav-link" data-scroll-target="#data-tools">Data Tools</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<section id="overview" class="level3">
+<h3 class="anchored" data-anchor-id="overview">Overview</h3>
+<p>The goal of the Data Tools Conceptual Framework is to highlight various tools that can be used to process and analyze data and data storytelling. While most tools can be used to accomplish a task, there are instances where some tools may be better suited to complete a given project.</p>
+<p>To distill down a project down into something that can be evaluated, a project can be broken down into individual work units. A project will be evaluated based on the volume and complexity of work units. For projects that have either a combination of complex work units or a large volume of work units will notably impact the type of tools that would be better suited.</p>
+<p>The key metrics that will be used when evaluating data tools will be the learning curve and how productive a person can be with a tool. While some tools may have a lower learning curve making them easier to pick up, if a project is large and/or complex, a tool that allows a person to be more productive could allow for the project to be done faster and with higher quality.</p>
+</section>
+<section id="defining-a-project" class="level3">
+<h3 class="anchored" data-anchor-id="defining-a-project">Defining a Project</h3>
+<p>A project consists of one or many work units. A work unit is a loose concept meant to represent the steps taken to complete a part of a project. When evaluating work units, it is important to keep in mind the volume and complexity of work units for a project.</p>
+<section id="complexity" class="level4">
+<h4 class="anchored" data-anchor-id="complexity">Complexity</h4>
+<p>The complexity of a work unit is a function of how many steps there are in a single work unit as well as if there are nuances in a work unit based on the input. Work units that have higher complexity will result in each individual unit taking longer to complete and increasing the opportunity for human error.</p>
+</section>
+<section id="volume" class="level4">
+<h4 class="anchored" data-anchor-id="volume">Volume</h4>
+<p>The volume of work units in a project is how many items need to be processed. This could range from either working with a single data file downloaded from a data platform or having to process three hundred sensor data files. Volume is important to keep in mind since even for projects where the individual work complexity is low, if there is a significant volume of units it could lead to the overall project taking a long time and increasing the likelihood of errors.</p>
+</section>
+</section>
+<section id="data-tool-metrics" class="level3">
+<h3 class="anchored" data-anchor-id="data-tool-metrics">Data Tool Metrics</h3>
+<p>When looking at data tools, a comparison will be made between the learning curve of the tool and how productive a person can be with that tool.</p>
+<section id="learning-curve" class="level4">
+<h4 class="anchored" data-anchor-id="learning-curve">Learning Curve</h4>
+<p>The learning curve represents how long it will take to initially learn the tool.</p>
+<p>For scoring, a high score represents a lower learning curve, and a low score represents a higher learning curve.</p>
+</section>
+<section id="productivity" class="level4">
+<h4 class="anchored" data-anchor-id="productivity">Productivity</h4>
+<p>Productivity is determined by how efficiently a person can complete an individual work unit. This is important since there could be instances where a person may have a large volume of work units for a given project or they may have to repeat a work unit because either an error was discovered or a step was missed.</p>
+<p>For scoring, a high score represents a tool that allows a person to be very productive with the tool versus a low score meaning the tool is more manual.</p>
+</section>
+</section>
+<section id="data-tools" class="level3">
+<h3 class="anchored" data-anchor-id="data-tools">Data Tools</h3>
+<p>Data Tools will be evaluated from the following categories: Spreadsheet, Programming Language, and Data Storytelling. An overview will be provided for where the tool excels and struggles in relation to the score.</p>
+<section id="spreadsheet" class="level4">
+<h4 class="anchored" data-anchor-id="spreadsheet">Spreadsheet</h4>
+<section id="overview-1" class="level5">
+<h5 class="anchored" data-anchor-id="overview-1">Overview</h5>
+<table class="table">
+<tbody>
+<tr class="odd">
+<td>Learning Curve</td>
+<td>Productivity</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>Excel and Google Sheets are both good examples of a spreadsheet tool. What is great about Excel and Google Sheets is that both have a low learning curve to get started and over the years have added many features that make it easy to go from structured data to insights. This could involve creating a pivot table that allows for easily aggregating and summarizing data to creating a variety of pre-baked charts that allow for a decent amount of customization.</p>
+<p>However, with the lower learning curve also comes with low Productivity. Since spreadsheet tools only allow manual input, each work unit must be done manually. This can become an issue with projects that have a large amount of work units or if a project has work units with high complexity.</p>
+<p>One caveat is that there is the ability to write macros in a spreadsheet tool to enhance the functionality but at that point, it would be more beneficial to take a step back to evaluate whether a Data Preparation Tool or Programming Language would be better suited for the project.</p>
+</section>
+<section id="capabilities" class="level5">
+<h5 class="anchored" data-anchor-id="capabilities">Capabilities</h5>
+<ul>
+<li>Data Preparation</li>
+<li>Data Storytelling</li>
+</ul>
+</section>
+<section id="ideal-project" class="level5">
+<h5 class="anchored" data-anchor-id="ideal-project">Ideal Project</h5>
+<p>Where Excel and Google Sheets excel are when you have a project that has a low volume of work units, and the complexity of the work units is low. In this scenario, the amount of time it takes to complete the project is low and additional time can be spent ensuring the quality of the project.</p>
+</section>
+<section id="cost-and-availability" class="level5">
+<h5 class="anchored" data-anchor-id="cost-and-availability">Cost and Availability</h5>
+<p>Where Google Sheets is free with a Google Account, Microsoft Excel has to be purchased if you are not in a setting where you are working at a company or are in school where Excel is provided. Additionally, Microsoft Excel works best on a Windows PC where Google Sheets is browser based and works in any operating System.</p>
+</section>
+</section>
+<section id="data-visualization-tools" class="level4">
+<h4 class="anchored" data-anchor-id="data-visualization-tools">Data Visualization Tools</h4>
+<section id="overview-2" class="level5">
+<h5 class="anchored" data-anchor-id="overview-2">Overview</h5>
+<table class="table">
+<tbody>
+<tr class="odd">
+<td>Learning Curve</td>
+<td>Productivity</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<p>Data Visualization Tools such as Tableau, Juicebox, and PowerBI allow for creating Data Visualizations with structured and cleansed data. Data Visualization Tool’s will allow for being more productive than using a Spreadsheet tool because of the additional features.</p>
+</section>
+<section id="capabilities-1" class="level5">
+<h5 class="anchored" data-anchor-id="capabilities-1">Capabilities</h5>
+<ul>
+<li>Data Visualization</li>
+</ul>
+</section>
+<section id="ideal-project-1" class="level5">
+<h5 class="anchored" data-anchor-id="ideal-project-1">Ideal Project</h5>
+<p>Data Visualization tools will excel at instances where there is a project where data has already been prepared. This will work better with low work units and lower complexity. However, because it has more features, it allows for some additional complexity. Will still struggle with higher volume of work.</p>
+</section>
+<section id="cost-and-availability-1" class="level5">
+<h5 class="anchored" data-anchor-id="cost-and-availability-1">Cost and Availability</h5>
+<p>Data Storytelling Tools must be purchased. This makes them more costly and less accessible.</p>
+</section>
+</section>
+<section id="programming-language" class="level4">
+<h4 class="anchored" data-anchor-id="programming-language">Programming Language</h4>
+<section id="overview-3" class="level5">
+<h5 class="anchored" data-anchor-id="overview-3">Overview</h5>
+<p>Where Programming Languages like R and Python have the greatest learning curve, they also allow for a person to be the most productive and makes it easier to produce higher quality end products. Additionally, as R and Python are both open source, that makes them free and very accessible.</p>
+<p>One of the greatest challenges to getting started with R and Python has been setting them up on a computer. However, there are free offerings for both R and Python allowing for them to be run in a browser without the need for setting up a personal computer.</p>
+</section>
+<section id="capabilities-2" class="level5">
+<h5 class="anchored" data-anchor-id="capabilities-2">Capabilities</h5>
+<ul>
+<li>Data Preparation</li>
+<li>Data Visualization</li>
+</ul>
+</section>
+<section id="ideal-project-2" class="level5">
+<h5 class="anchored" data-anchor-id="ideal-project-2">Ideal Project</h5>
+<p>Programming Languages have packages that support a wide variety of project types. However, taking into consideration the learning curve and the amount of time it takes to set up a project, an ideal projects for Programming Languages are ones that require reproducibility, processing a large amount of items, and have complex steps.</p>
+</section>
+<section id="cost-and-accessibility" class="level5">
+<h5 class="anchored" data-anchor-id="cost-and-accessibility">Cost and Accessibility</h5>
+<p>There is no cost to using R and Python. It is accessible for anyone to use that has access to a computer with internet.</p>
+</section>
+<section id="overall-scoring" class="level5">
+<h5 class="anchored" data-anchor-id="overall-scoring">Overall Scoring</h5>
+<p>Below is a list of scores for several types of tools.</p>
+<table class="table">
+<colgroup>
+<col style="width: 62%">
+<col style="width: 20%">
+<col style="width: 17%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Tool</td>
+<td>Learning Curve</td>
+<td>Productivity</td>
+</tr>
+<tr class="even">
+<td>Spreadsheet Tool (Excel, Google Sheets)</td>
+<td>10</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>Data Visualization (Tableau, Juicebox, PowerBI)</td>
+<td>6</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>Programming Language (Python, R)</td>
+<td>1</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<section id="conclusion" class="level3">
+<h3 class="anchored" data-anchor-id="conclusion">Conclusion</h3>
+<p>For projects that have a low volume of work with low complexity, a Spreadsheet Tool will be sufficient. However, if either the complexity or volume of work is high, over the lifetime of a project it would be beneficial to explore using a combination of programming languages and data visualization tools.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+      <div class="nav-footer-center">
+        <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/alexantonison/">
+      <i class="bi bi-linkedin" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/alex-antonison">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+      </div>
+  </div>
+</footer>
+
+
+
+</body></html>
