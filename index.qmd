@@ -1,14 +1,40 @@
 ---
-title: "blog"
+sidebar: false
+toc: true
+image: quarto.png
 listing:
+  date-format: short
+  feed: true
   contents: posts
   sort: "date desc"
-  type: default
-  categories: true
+  type: table
+  categories: false
   sort-ui: false
   filter-ui: false
+  id: blog-listings
 page-layout: full
 title-block-banner: true
+format:
+  html:
+    anchor-sections: true
 ---
 
+::: {layout="[21,79]" .profile-header}
 
+![](images/alex_headshot.jpg){.profile-pic}
+
+Hello, I’m Alex Antonison. I'm a Data Engineer with 10+ years of experience performing in Data Engineering roles across Government, Energy, Healthcare, and Environmental Science. One consistent focus is to evaluate the process of data for a given organization and identify opportunities to streamline data processing, management, and analytics. The end goal is to ensure high quality data is accessible and easy to use in a timely manner.
+
+:::
+
+## 💼 Get In Touch
+
+Are you looking for a Data Engineer to help scale your data solutions? I am currently looking for my next opportunity.
+
+Email me at `adantonison@gmail.com`, or send me a message on [![](images/icon-linkedin.png){width="3%"}](https://www.linkedin.com/in/alexantonison/) if you'd like to chat!
+
+
+## 📮 Blog Posts
+
+::: {#blog-listings}
+:::

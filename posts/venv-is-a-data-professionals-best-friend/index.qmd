@@ -2,15 +2,18 @@
 title: "venv is a Data Professional's Best Friend"
 author: "Alex Antonison"
 date: "2021-02-06"
-categories: [reproducibility, virtual environment, renv, venv, poetry]
-image: "python-virtual-envs1.webp"
+format:
+  html:
+    toc: true
+    toc-location: left
+    toc-title: Table of Contents
 ---
 
-# venv is a Data Professional's best friend
+### Preface
 
 Have you ever tried to share a project with a colleague and they struggled to run it? Have you ever spent hours trying to get a machine learning library to work? If so, there are solutions out there that can help with this!  In this post, I will talk about a utility, virtual environments, that can be used to manage specific packages.
 
-## venv/renv
+### venv/renv
 
 When starting up a project, the first step I take is to spin up a virtual environment. In python, my personal favorite is the virtual environment utility built directly into python, [python venv](https://docs.python.org/3/tutorial/venv.html). In R, I like to use the package [renv](https://rstudio.github.io/renv/) supported by RStudio. I do this for the following reasons:
 
@@ -53,10 +56,10 @@ Rscript -e "renv::snapshot()"
 
 This will update the `renv.lock` file that should be used when sharing your code to allow setting up a new environment from it.  This is most easily used when working with R in a project in RStudio.
 
-## Limitations
+### Limitations
 
 While virtual environments are great at managing packages needed to run code, it is limited to just that.  There are other aspects of running a project such as application or operating system dependencies. To completely solve for reproducing the environment for running code, you can explore using [docker](https://www.docker.com/), a utility that will allow for capturing your entire environment which includes the Operating System and supporting applications.  There is a steeper learning curve to this, and I plan on dedicating entire post(s) to the topic of how docker is a more comprehensive solution to reproducibility.
 
-## Other virtual environment tools
+### Other virtual environment tools
 
 For python, [pipenv](https://pipenv.pypa.io/en/latest/) and [poetry](https://python-poetry.org/) are virtual environment utilities that allow for managing various versions of packages in a project.  You can manage packages ranging from selecting a specific version of a package to letting any version of that package be installed.  While these tools can be helpful in managing packages and package dependencies, they come with additional complexity and a learning curve.

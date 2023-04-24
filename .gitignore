@@ -130,3 +130,7 @@ dmypy.json
 
 /.quarto/
 /_site/
+.Rproj.user
+.Rhistory
+.RData
+.DS_Store

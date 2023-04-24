@@ -1,0 +1,9 @@
+---
+title: "Projects"
+talks:
+  template: solana
+---
+
+| Project Name        | Description                                                                                                                                              | Link                                                                            |
+|-----------|---------------------------------------------------|-----------|
+| ProcessMassSpecData | Working with a research lab at the University of Florida to streamline calculating the concentration of analytes in samples from Mass spectrometry data. | <a href="https://github.com/alex-antonison/ProcessMassSpecData" target="_blank">ProcessMassSpecData</a>  |

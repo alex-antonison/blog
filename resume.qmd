@@ -1,0 +1,10 @@
+---
+title: "Resume"
+talks:
+  template: solana
+format:
+  html:
+    embed-resources: true
+---
+
+<iframe src="alex_antonison_resume.html" style="width:100%; height:100%;"></iframe>
