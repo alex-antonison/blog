@@ -5,8 +5,8 @@ date: "2019-03-09"
 format:
   html:
     toc: true
-    toc-location: left
-    toc-title: Table of Contents
+    toc-location: right
+    toc-title: On this page
 ---
 
 ### Preface 
