@@ -2,6 +2,7 @@ project:
   type: website
 
 website:
+  title: "Blog"
   page-footer:
     center:
       - icon: linkedin
@@ -10,8 +11,6 @@ website:
         href: https://github.com/alex-antonison
   navbar:
     left:
-      - text: "Blog"
-        href: index.qmd
       - text: Talks
         file: talks.qmd
       - text: Resources
