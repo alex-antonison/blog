@@ -5,8 +5,8 @@ talks:
 format:
   html:
     toc: true
-    toc-location: left
-    toc-title: Table of Contents
+    toc-location: right
+    toc-title: On this page
 ---
 
 ### Overview
