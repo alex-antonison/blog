@@ -31,7 +31,7 @@ Hello, I’m Alex Antonison. I'm a Data Engineer with 10+ years of experience pe
 
 Are you looking for a Data Engineer to help scale your data solutions? I am currently looking for my next opportunity.
 
-Email me at `adantonison@gmail.com`, or send me a message on [![](images/icon-linkedin.png){width="3%"}](https://www.linkedin.com/in/alexantonison/) if you'd like to chat!
+Email me at `adantonison@gmail.com` or send me a message on [![](images/icon-linkedin.png){width="3%"}](https://www.linkedin.com/in/alexantonison/) if you'd like to chat!
 
 
 ## 📮 Blog Posts
