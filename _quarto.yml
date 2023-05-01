@@ -33,7 +33,7 @@ website:
 
 format:
   html:
-    theme: [superhero, custom.scss]
+    theme: superhero
     css: styles.css
 
 
