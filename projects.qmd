@@ -1,7 +1,5 @@
 ---
 title: "Projects"
-talks:
-  template: solana
 ---
 
 | Project Name        | Description                                                                                                                                              | Link                                                                            |
