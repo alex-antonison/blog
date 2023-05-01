@@ -15,7 +15,7 @@
 <link>https://www.alex-antonison.com/index.html</link>
 </image>
 <generator>quarto-1.3.340</generator>
-<lastBuildDate>Mon, 24 Apr 2023 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sun, 23 Apr 2023 23:00:00 GMT</lastBuildDate>
 <item>
   <title>The Process of Data</title>
   <dc:creator>Alex Antonison</dc:creator>
@@ -47,7 +47,7 @@
 
  ]]></description>
   <guid>https://www.alex-antonison.com/posts/the-process-of-data/index.html</guid>
-  <pubDate>Mon, 24 Apr 2023 00:00:00 GMT</pubDate>
+  <pubDate>Sun, 23 Apr 2023 23:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Tool Selection Framework</title>
@@ -473,7 +473,7 @@ font-style: inherit;">"renv::snapshot()"</span></span></code></pre></div>
 
  ]]></description>
   <guid>https://www.alex-antonison.com/posts/different-roles-in-data/index.html</guid>
-  <pubDate>Fri, 04 Oct 2019 00:00:00 GMT</pubDate>
+  <pubDate>Thu, 03 Oct 2019 23:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Ethical use of algorithms with data</title>
