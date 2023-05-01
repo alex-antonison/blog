@@ -23,7 +23,7 @@ format:
 
 ![](images/alex_headshot.jpg){.profile-pic}
 
-Hello, I’m Alex Antonison. I'm a Data Engineer with 10+ years of experience performing in Data Engineering roles across Government, Energy, Healthcare, and Environmental Science. One consistent focus is to evaluate the process of data for a given organization and identify opportunities to streamline data processing, management, and analytics. The end goal is to ensure high quality data is accessible and easy to use in a timely manner.
+Hello, I’m Alex Antonison. I am a Data Engineer with over a decade of experience across Government, Healthcare, and Environmental Science. One consistent focus has been to evaluate the process of data and identify opportunities to streamline data processing, management, and analytics. Once a process is mapped out, I work with stakeholders to identify solutions ensuring high quality data is accessible and easy to use in a timely manner.
 
 :::
 
