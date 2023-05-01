@@ -19,12 +19,10 @@ format:
     anchor-sections: true
 ---
 
-::: {layout="[21,79]" .profile-header}
-
+::: {.profile-header layout="[21,79]"}
 ![](images/alex_headshot.jpg){.profile-pic}
 
-Hello, I’m Alex Antonison. I am a Data Engineer with over a decade of experience across Government, Healthcare, and Environmental Science. One consistent focus has been to evaluate the process of data and identify opportunities to streamline data processing, management, and analytics. Once a process is mapped out, I work with stakeholders to identify solutions ensuring high quality data is accessible and easy to use in a timely manner.
-
+Hello, I'm Alex Antonison. I am a Data Engineer with over a decade of experience across Government, Healthcare, and Environmental Science. One consistent focus has been to evaluate the process of data and identify opportunities to streamline data processing, management, and analytics. Once a process is mapped out, I work with stakeholders to identify solutions ensuring high quality data is accessible and easy to use in a timely manner.
 :::
 
 ## 💼 Get In Touch
@@ -32,7 +30,6 @@ Hello, I’m Alex Antonison. I am a Data Engineer with over a decade of experien
 Are you looking for a Data Engineer to help scale your data solutions? I am currently looking for my next opportunity.
 
 Email me at `adantonison@gmail.com` or send me a message on [![](images/icon-linkedin.png){width="3%"}](https://www.linkedin.com/in/alexantonison/) if you'd like to chat!
-
 
 ## 📮 Blog Posts
 
