@@ -11,7 +11,7 @@ format:
 
 ## The Problem
 
-When I initinally posted to LinkedIn that I was looking for my next job opportunity, I was a bit overwhelmed with the amount of responses I received. I feel very fortunate to have an amazing network of colleagues that reached out to see how they could help. However, I quickly realized I needed to start tracking conversations, recommended companies and job applications. My first idea was to spin up a Google Sheet that included a Contacts, Companies, Job Applications, and Activies tab.
+When I initinally posted to LinkedIn that I was looking for my next job opportunity, I was a bit overwhelmed with the amount of responses I received. I feel very fortunate to have an amazing network of colleagues that reached out to see how they could help. However, I quickly realized I needed to start tracking conversations, recommended companies and job applications. My first idea was to spin up a Google Sheet that included a Contacts, Companies, Job Applications, and Activities tab.
 
 As I started to fill this out, I quickly identified a handful of issues:
 
@@ -27,7 +27,7 @@ As I was looking at how I had organized my Job Hunting Google Sheet, I realized 
 
 ### Setting up Companies
 
-The first thing I did was to go into HubSpot and customized the entry forms and table views for Companies and Contacts to line up with the kind of information I wanted to capture. One of the first parts of HubSpot I really liked was when adding a company, all I had to do was input the companies website and HubSpot would automatically pull in information about the company such as industry, employee size, etc. Once I had a company added, I could go in and add Contacts (aka people) to that company to establish a relationship between people I was talking with and the companies they worked at.
+The first thing I did was to go into HubSpot and customized the entry forms and table views for Companies and Contacts to line up with the kind of information I wanted to capture. One of the first parts of HubSpot I really liked was when adding a company, all I had to do was input the companies website and HubSpot would automatically pull in information about the company such as industry, employee size, etc. Once I had a company added, I could go in and add people to that company to establish a relationship between people I was talking with and the companies they worked at.
 
 ![This is what my company view looks like with the fake company I set up for testing purposes.](./hubspot-companies-example.png)
 
@@ -41,7 +41,7 @@ One more involved adjustment I wanted to make was to give myself a way of specif
 
 ### Setting up Contacts
 
-For Contacts, I took the approach of keeping it as simple as possible. One thing I decided on was for a person's Website, I opted to include their LinkedIn profile as that can give me a quick way looking up someones work history before hopping on a call or meeting them in person.
+For Contacts, I took the approach of keeping it as simple as possible so I cut down the input form quite a bit. While they had a field for Twitter, HubSpot did not include one for LinkedIn. I thought it would be helfpul to look at people's LinkedIn's prior to a call or in person meeting, so I co-opted the Website URL field to be used for people's LinkedIn URL.
 
 ![Contact Entry Form](./hubspot-contact-entry-form.png)
 
@@ -57,7 +57,7 @@ With all of my companies and contacts added, I then set up Deals as Job Applicat
 
 ![My initial pass at setting up the different stages of a job application process.](./hubspot-deals-to-job-applications.png)
 
-With that setup, I then tailored down the Deal submit form to be simple to make it as simple as possible to add job applications as well as tie those job applications to people and/or companies. In the Deal Description section, I put the Job's URL so I can quickly bring up the information about the job.
+With that setup, I then tailored down the Deal submit form to be short so it would be quick add Job Applications. Also, I can tie those job applications to people and/or companies. In the Deal Description section, I put the Job's URL so I can quickly bring up the information about the job.
 
 ![Job Appliation/Deal Entry Form](./hubspot-submit-job-application.png)
 
@@ -71,7 +71,7 @@ Now that I have Companies, Contacts, and Job Applications set up, my workflow fo
 
 ![My example contact showing what you can capture](./hubspot-contact-activities.png)
 
-When you log anything, there is an option at the bottom to set up a "Follow up task" with either a default or custom follow up date. I have to say this is easily one of my favorite features since it streamlines setting reminders to follow up with people or companies.
+When you log anything, there is an option at the bottom to set up a "Follow up task" with either a default or custom follow up date. I have to say this is easily one of my favorite features since it streamlines setting up reminders to follow up.
 
 ![Example logging an activity](./hubspot-logging-an-email.png)
 
