@@ -2,6 +2,7 @@
 title: "HubSpot for Job Hunting"
 author: "Alex Antonison"
 date: "2023-06-02"
+image: "hubspot-post-logo.png"
 format:
   html:
     toc: true
