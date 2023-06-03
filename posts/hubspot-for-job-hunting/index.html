@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Alex Antonison">
-<meta name="dcterms.date" content="2023-03-01">
+<meta name="dcterms.date" content="2023-06-02">
 
-<title>Alex Antonison’s Blog - Tool Selection Framework</title>
+<title>Alex Antonison’s Blog - HubSpot for Job Hunting</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -121,7 +121,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Tool Selection Framework</h1>
+      <h1 class="title">HubSpot for Job Hunting</h1>
                       </div>
   </div>
     
@@ -138,7 +138,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">March 1, 2023</p>
+        <p class="date">June 2, 2023</p>
       </div>
     </div>
     
@@ -154,11 +154,21 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#defining-a-project" id="toc-defining-a-project" class="nav-link" data-scroll-target="#defining-a-project">Defining a Project</a></li>
-  <li><a href="#data-tool-metrics" id="toc-data-tool-metrics" class="nav-link" data-scroll-target="#data-tool-metrics">Data Tool Metrics</a></li>
-  <li><a href="#data-tools" id="toc-data-tools" class="nav-link" data-scroll-target="#data-tools">Data Tools</a></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  <li><a href="#the-problem" id="toc-the-problem" class="nav-link active" data-scroll-target="#the-problem">The Problem</a></li>
+  <li><a href="#a-more-automated-approach" id="toc-a-more-automated-approach" class="nav-link" data-scroll-target="#a-more-automated-approach">A More Automated Approach</a></li>
+  <li><a href="#getting-hubspot-setup-for-job-hutning" id="toc-getting-hubspot-setup-for-job-hutning" class="nav-link" data-scroll-target="#getting-hubspot-setup-for-job-hutning">Getting HubSpot setup for Job Hutning</a>
+  <ul class="collapse">
+  <li><a href="#setting-up-companies" id="toc-setting-up-companies" class="nav-link" data-scroll-target="#setting-up-companies">Setting up Companies</a></li>
+  <li><a href="#setting-up-contacts" id="toc-setting-up-contacts" class="nav-link" data-scroll-target="#setting-up-contacts">Setting up Contacts</a></li>
+  <li><a href="#setting-up-job-applications-aka-deals" id="toc-setting-up-job-applications-aka-deals" class="nav-link" data-scroll-target="#setting-up-job-applications-aka-deals">Setting up Job Applications (aka Deals)</a></li>
+  </ul></li>
+  <li><a href="#using-hubspot" id="toc-using-hubspot" class="nav-link" data-scroll-target="#using-hubspot">Using HubSpot</a></li>
+  <li><a href="#other-interesting-features" id="toc-other-interesting-features" class="nav-link" data-scroll-target="#other-interesting-features">Other Interesting Features</a>
+  <ul class="collapse">
+  <li><a href="#free-meeting-scheduler" id="toc-free-meeting-scheduler" class="nav-link" data-scroll-target="#free-meeting-scheduler">Free Meeting Scheduler</a></li>
+  <li><a href="#sending-e-mails-from-hubspot" id="toc-sending-e-mails-from-hubspot" class="nav-link" data-scroll-target="#sending-e-mails-from-hubspot">Sending E-mails from HubSpot</a></li>
+  </ul></li>
+  <li><a href="#feel-free-to-reach-out" id="toc-feel-free-to-reach-out" class="nav-link" data-scroll-target="#feel-free-to-reach-out">Feel free to reach out</a></li>
   </ul>
 </nav>
     </div>
@@ -168,170 +178,131 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="overview" class="level3">
-<h3 class="anchored" data-anchor-id="overview">Overview</h3>
-<p>The goal of the Data Tools Conceptual Framework is to highlight various tools that can be used to process and analyze data and data storytelling. While most tools can be used to accomplish a task, there are instances where some tools may be better suited to complete a given project.</p>
-<p>To distill down a project down into something that can be evaluated, a project can be broken down into individual work units. A project will be evaluated based on the volume and complexity of work units. For projects that have either a combination of complex work units or a large volume of work units will notably impact the type of tools that would be better suited.</p>
-<p>The key metrics that will be used when evaluating data tools will be the learning curve and how productive a person can be with a tool. While some tools may have a lower learning curve making them easier to pick up, if a project is large and/or complex, a tool that allows a person to be more productive could allow for the project to be done faster and with higher quality.</p>
-</section>
-<section id="defining-a-project" class="level3">
-<h3 class="anchored" data-anchor-id="defining-a-project">Defining a Project</h3>
-<p>A project consists of one or many work units. A work unit is a loose concept meant to represent the steps taken to complete a part of a project. When evaluating work units, it is important to keep in mind the volume and complexity of work units for a project.</p>
-<section id="complexity" class="level4">
-<h4 class="anchored" data-anchor-id="complexity">Complexity</h4>
-<p>The complexity of a work unit is a function of how many steps there are in a single work unit as well as if there are nuances in a work unit based on the input. Work units that have higher complexity will result in each individual unit taking longer to complete and increasing the opportunity for human error.</p>
-</section>
-<section id="volume" class="level4">
-<h4 class="anchored" data-anchor-id="volume">Volume</h4>
-<p>The volume of work units in a project is how many items need to be processed. This could range from either working with a single data file downloaded from a data platform or having to process three hundred sensor data files. Volume is important to keep in mind since even for projects where the individual work complexity is low, if there is a significant volume of units it could lead to the overall project taking a long time and increasing the likelihood of errors.</p>
-</section>
-</section>
-<section id="data-tool-metrics" class="level3">
-<h3 class="anchored" data-anchor-id="data-tool-metrics">Data Tool Metrics</h3>
-<p>When looking at data tools, a comparison will be made between the learning curve of the tool and how productive a person can be with that tool.</p>
-<section id="learning-curve" class="level4">
-<h4 class="anchored" data-anchor-id="learning-curve">Learning Curve</h4>
-<p>The learning curve represents how long it will take to initially learn the tool.</p>
-<p>For scoring, a high score represents a lower learning curve, and a low score represents a higher learning curve.</p>
-</section>
-<section id="productivity" class="level4">
-<h4 class="anchored" data-anchor-id="productivity">Productivity</h4>
-<p>Productivity is determined by how efficiently a person can complete an individual work unit. This is important since there could be instances where a person may have a large volume of work units for a given project or they may have to repeat a work unit because either an error was discovered or a step was missed.</p>
-<p>For scoring, a high score represents a tool that allows a person to be very productive with the tool versus a low score meaning the tool is more manual.</p>
-</section>
-</section>
-<section id="data-tools" class="level3">
-<h3 class="anchored" data-anchor-id="data-tools">Data Tools</h3>
-<p>Data Tools will be evaluated from the following categories: Spreadsheet, Programming Language, and Data Storytelling. An overview will be provided for where the tool excels and struggles in relation to the score.</p>
-<section id="spreadsheet" class="level4">
-<h4 class="anchored" data-anchor-id="spreadsheet">Spreadsheet</h4>
-<section id="overview-1" class="level5">
-<h5 class="anchored" data-anchor-id="overview-1">Overview</h5>
-<table class="table">
-<tbody>
-<tr class="odd">
-<td>Learning Curve</td>
-<td>Productivity</td>
-</tr>
-<tr class="even">
-<td>10</td>
-<td>1</td>
-</tr>
-</tbody>
-</table>
-<p>Excel and Google Sheets are both good examples of a spreadsheet tool. What is great about Excel and Google Sheets is that both have a low learning curve to get started and over the years have added many features that make it easy to go from structured data to insights. This could involve creating a pivot table that allows for easily aggregating and summarizing data to creating a variety of pre-baked charts that allow for a decent amount of customization.</p>
-<p>However, with the lower learning curve also comes with low Productivity. Since spreadsheet tools only allow manual input, each work unit must be done manually. This can become an issue with projects that have a large amount of work units or if a project has work units with high complexity.</p>
-<p>One caveat is that there is the ability to write macros in a spreadsheet tool to enhance the functionality but at that point, it would be more beneficial to take a step back to evaluate whether a Data Preparation Tool or Programming Language would be better suited for the project.</p>
-</section>
-<section id="capabilities" class="level5">
-<h5 class="anchored" data-anchor-id="capabilities">Capabilities</h5>
+<section id="the-problem" class="level2">
+<h2 class="anchored" data-anchor-id="the-problem">The Problem</h2>
+<p>When I initinally posted to LinkedIn that I was looking for my next job opportunity, I was a bit overwhelmed with the amount of responses I received. I feel very fortunate to have an amazing network of colleagues that reached out to see how they could help. However, I quickly realized I needed to start tracking conversations, recommended companies and job applications. My first idea was to spin up a Google Sheet that included a Contacts, Companies, Job Applications, and Activities tab.</p>
+<p>As I started to fill this out, I quickly identified a handful of issues:</p>
 <ul>
-<li>Data Preparation</li>
-<li>Data Storytelling</li>
+<li>This was going to be <strong>very</strong> manual</li>
+<li>Typos would be the end of me</li>
+<li>I would have to use something like Google Data Studio to combine information across tabs</li>
 </ul>
 </section>
-<section id="ideal-project" class="level5">
-<h5 class="anchored" data-anchor-id="ideal-project">Ideal Project</h5>
-<p>Where Excel and Google Sheets excel are when you have a project that has a low volume of work units, and the complexity of the work units is low. In this scenario, the amount of time it takes to complete the project is low and additional time can be spent ensuring the quality of the project.</p>
+<section id="a-more-automated-approach" class="level2">
+<h2 class="anchored" data-anchor-id="a-more-automated-approach">A More Automated Approach</h2>
+<p>As I was looking at how I had organized my Job Hunting Google Sheet, I realized this looked very familiar with how I have worked with data out of CRM’s like Salesforce and HubSpot. After some quick googling, I found this blog post by HubSpot <a href="https://blog.hubspot.com/customers/job-search-in-hubspot-crm" target="_blank">How to Organize Your Job Hunt in HubSpot CRM</a> and it inspired me give it a shot.</p>
 </section>
-<section id="cost-and-availability" class="level5">
-<h5 class="anchored" data-anchor-id="cost-and-availability">Cost and Availability</h5>
-<p>Where Google Sheets is free with a Google Account, Microsoft Excel has to be purchased if you are not in a setting where you are working at a company or are in school where Excel is provided. Additionally, Microsoft Excel works best on a Windows PC where Google Sheets is browser based and works in any operating System.</p>
+<section id="getting-hubspot-setup-for-job-hutning" class="level2">
+<h2 class="anchored" data-anchor-id="getting-hubspot-setup-for-job-hutning">Getting HubSpot setup for Job Hutning</h2>
+<section id="setting-up-companies" class="level3">
+<h3 class="anchored" data-anchor-id="setting-up-companies">Setting up Companies</h3>
+<p>The first thing I did was to go into HubSpot and customized the entry forms and table views for Companies and Contacts to line up with the kind of information I wanted to capture. One of the first parts of HubSpot I really liked was when adding a company, all I had to do was input the companies website and HubSpot would automatically pull in information about the company such as industry, employee size, etc. Once I had a company added, I could go in and add people to that company to establish a relationship between people I was talking with and the companies they worked at.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./hubspot-companies-example.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">This is what my company view looks like with the fake company I set up for testing purposes.</figcaption>
+</figure>
+</div>
+<p>One more involved adjustment I wanted to make was to give myself a way of specifying a Type of company. By default, HubSpot <code>Company.Type</code> was tailored more towards sales but fortunately, you can go into their data model and customize various elements. You can accomplish this by going to Profile &amp; Preferences &gt; Data Management &gt; Objects &gt; Companies. From there, I changed Type to be Startup, Consulting, Recruitment, Company, and University.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./hubspot-company-type-dropdown.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">This is the custom Company Type field dropbox I created</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./hubspot-company-field-properties.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">You get to Company &gt; Type Edit property via Profile &amp; Preferences &gt; Data Management &gt; Objects &gt; Companies</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./hubspot-company-type-edit.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Once in the Type Object, you can customize the Types</figcaption>
+</figure>
+</div>
 </section>
+<section id="setting-up-contacts" class="level3">
+<h3 class="anchored" data-anchor-id="setting-up-contacts">Setting up Contacts</h3>
+<p>For Contacts, I took the approach of keeping it as simple as possible so I cut down the input form quite a bit. While they had a field for Twitter, HubSpot did not include one for LinkedIn. I thought it would be helfpul to look at people’s LinkedIn’s prior to a call or in person meeting, so I co-opted the Website URL field to be used for people’s LinkedIn URL.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./hubspot-contact-entry-form.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Contact Entry Form</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./hubspot-contacts-example.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">This is what my contacts view looks like. I recommend adding yourself as a contact as you can try things out like e-mail, scheduling, etc.</figcaption>
+</figure>
+</div>
+<p>One feature that has been helpful for me is a built-in data quality feature for HubSpot where it will call out if you have already added someone with their e-mail as a contact.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./hubspot-contact-data-quality.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">HubSpot Identifies Contacts with duplicate e-mails</figcaption>
+</figure>
+</div>
 </section>
-<section id="data-visualization-tools" class="level4">
-<h4 class="anchored" data-anchor-id="data-visualization-tools">Data Visualization Tools</h4>
-<section id="overview-2" class="level5">
-<h5 class="anchored" data-anchor-id="overview-2">Overview</h5>
-<table class="table">
-<tbody>
-<tr class="odd">
-<td>Learning Curve</td>
-<td>Productivity</td>
-</tr>
-<tr class="even">
-<td>6</td>
-<td>2</td>
-</tr>
-</tbody>
-</table>
-<p>Data Visualization Tools such as Tableau, Juicebox, and PowerBI allow for creating Data Visualizations with structured and cleansed data. Data Visualization Tool’s will allow for being more productive than using a Spreadsheet tool because of the additional features.</p>
-</section>
-<section id="capabilities-1" class="level5">
-<h5 class="anchored" data-anchor-id="capabilities-1">Capabilities</h5>
-<ul>
-<li>Data Visualization</li>
-</ul>
-</section>
-<section id="ideal-project-1" class="level5">
-<h5 class="anchored" data-anchor-id="ideal-project-1">Ideal Project</h5>
-<p>Data Visualization tools will excel at instances where there is a project where data has already been prepared. This will work better with low work units and lower complexity. However, because it has more features, it allows for some additional complexity. Will still struggle with higher volume of work.</p>
-</section>
-<section id="cost-and-availability-1" class="level5">
-<h5 class="anchored" data-anchor-id="cost-and-availability-1">Cost and Availability</h5>
-<p>Data Storytelling Tools must be purchased. This makes them more costly and less accessible.</p>
-</section>
-</section>
-<section id="programming-language" class="level4">
-<h4 class="anchored" data-anchor-id="programming-language">Programming Language</h4>
-<section id="overview-3" class="level5">
-<h5 class="anchored" data-anchor-id="overview-3">Overview</h5>
-<p>Where Programming Languages like R and Python have the greatest learning curve, they also allow for a person to be the most productive and makes it easier to produce higher quality end products. Additionally, as R and Python are both open source, that makes them free and very accessible.</p>
-<p>One of the greatest challenges to getting started with R and Python has been setting them up on a computer. However, there are free offerings for both R and Python allowing for them to be run in a browser without the need for setting up a personal computer.</p>
-</section>
-<section id="capabilities-2" class="level5">
-<h5 class="anchored" data-anchor-id="capabilities-2">Capabilities</h5>
-<ul>
-<li>Data Preparation</li>
-<li>Data Visualization</li>
-</ul>
-</section>
-<section id="ideal-project-2" class="level5">
-<h5 class="anchored" data-anchor-id="ideal-project-2">Ideal Project</h5>
-<p>Programming Languages have packages that support a wide variety of project types. However, taking into consideration the learning curve and the amount of time it takes to set up a project, an ideal projects for Programming Languages are ones that require reproducibility, processing a large amount of items, and have complex steps.</p>
-</section>
-<section id="cost-and-accessibility" class="level5">
-<h5 class="anchored" data-anchor-id="cost-and-accessibility">Cost and Accessibility</h5>
-<p>There is no cost to using R and Python. It is accessible for anyone to use that has access to a computer with internet.</p>
-</section>
-<section id="overall-scoring" class="level5">
-<h5 class="anchored" data-anchor-id="overall-scoring">Overall Scoring</h5>
-<p>Below is a list of scores for several types of tools.</p>
-<table class="table">
-<colgroup>
-<col style="width: 62%">
-<col style="width: 20%">
-<col style="width: 17%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Tool</td>
-<td>Learning Curve</td>
-<td>Productivity</td>
-</tr>
-<tr class="even">
-<td>Spreadsheet Tool (Excel, Google Sheets)</td>
-<td>10</td>
-<td>1</td>
-</tr>
-<tr class="odd">
-<td>Data Visualization (Tableau, Juicebox, PowerBI)</td>
-<td>6</td>
-<td>5</td>
-</tr>
-<tr class="even">
-<td>Programming Language (Python, R)</td>
-<td>1</td>
-<td>10</td>
-</tr>
-</tbody>
-</table>
+<section id="setting-up-job-applications-aka-deals" class="level3">
+<h3 class="anchored" data-anchor-id="setting-up-job-applications-aka-deals">Setting up Job Applications (aka Deals)</h3>
+<p>With all of my companies and contacts added, I then set up Deals as Job Applications. For this, I went into the Profile &amp; Preferences &gt; Data Management &gt; Objects &gt; Deals and changed the Piplines to map to the different parts of the application process.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./hubspot-deals-to-job-applications.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">My initial pass at setting up the different stages of a job application process.</figcaption>
+</figure>
+</div>
+<p>With that setup, I then tailored down the Deal submit form to be short so it would be quick add Job Applications. Also, I can tie those job applications to people and/or companies. In the Deal Description section, I put the Job’s URL so I can quickly bring up the information about the job.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./hubspot-submit-job-application.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Job Appliation/Deal Entry Form</figcaption>
+</figure>
+</div>
+<p>Since I can connect both a Company and Contacts to a Deal, in my Deal’s view I can see what job applications where I have had recenty activity with the target comapny. I also included an “Amount” column that will be populated in the event I receive an offer from a company.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./hubspot-deals-view.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">This is what my HubSpot Deals view looks like</figcaption>
+</figure>
+</div>
 </section>
 </section>
+<section id="using-hubspot" class="level2">
+<h2 class="anchored" data-anchor-id="using-hubspot">Using HubSpot</h2>
+<p>Now that I have Companies, Contacts, and Job Applications set up, my workflow for using HubSpot involves logging e-mails, calls, and meetings with a Contact.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./hubspot-contact-activities.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">My example contact showing what you can capture</figcaption>
+</figure>
+</div>
+<p>When you log anything, there is an option at the bottom to set up a “Follow up task” with either a default or custom follow up date. I have to say this is easily one of my favorite features since it streamlines setting up reminders to follow up.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./hubspot-logging-an-email.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Example logging an activity</figcaption>
+</figure>
+</div>
 </section>
-<section id="conclusion" class="level3">
-<h3 class="anchored" data-anchor-id="conclusion">Conclusion</h3>
-<p>For projects that have a low volume of work with low complexity, a Spreadsheet Tool will be sufficient. However, if either the complexity or volume of work is high, over the lifetime of a project it would be beneficial to explore using a combination of programming languages and data visualization tools.</p>
+<section id="other-interesting-features" class="level2">
+<h2 class="anchored" data-anchor-id="other-interesting-features">Other Interesting Features</h2>
+<p>After it only took a few hours to get Companies, Contacts, and Job Applications setup, I decided to explore some other features of HubSpot’s free tier that could be helpful in automating other aspects of my job hunt.</p>
+<section id="free-meeting-scheduler" class="level3">
+<h3 class="anchored" data-anchor-id="free-meeting-scheduler">Free Meeting Scheduler</h3>
+<p>If you are open to connecting your Google e-mail to your HubSpot platform, <a href="https://www.hubspot.com/products/sales/schedule-meeting" target="_blank">HubSpot has a free meeting scheduler</a> that can connect directly with your Google Calendar to streamline people scheduling time with you.</p>
+</section>
+<section id="sending-e-mails-from-hubspot" class="level3">
+<h3 class="anchored" data-anchor-id="sending-e-mails-from-hubspot">Sending E-mails from HubSpot</h3>
+<p>To help connect e-mail conversations with people you are networking with to potential job opportunities, you can use <a href="https://knowledge.hubspot.com/email/send-and-reply-to-one-to-one-emails" target="_blank">HubSpot to send one-on-one e-mails to a contact</a>.</p>
+</section>
+</section>
+<section id="feel-free-to-reach-out" class="level2">
+<h2 class="anchored" data-anchor-id="feel-free-to-reach-out">Feel free to reach out</h2>
+<p>I hope other people can find HubSpot to be as helpful as I have in their job hunt! If you have any questions or betters ideas on how I could improve this, please feel free to reach out!</p>
 
 
 </section>
