@@ -1,51 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.alex-antonison.com/resources.html</loc>
-    <lastmod>2023-06-03T01:20:48.621Z</lastmod>
-  </url>
-  <url>
     <loc>https://www.alex-antonison.com/projects.html</loc>
-    <lastmod>2023-06-03T01:20:49.345Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.alex-antonison.com/posts/ethical-use-algorithms-and-data/index.html</loc>
-    <lastmod>2023-06-03T01:20:50.017Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.alex-antonison.com/posts/venv-is-a-data-professionals-best-friend/index.html</loc>
-    <lastmod>2023-06-03T01:20:50.505Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.alex-antonison.com/posts/hubspot-for-job-hunting/index.html</loc>
-    <lastmod>2023-06-03T01:20:51.097Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.alex-antonison.com/posts/different-roles-in-data/index.html</loc>
-    <lastmod>2023-06-03T01:20:51.805Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.alex-antonison.com/posts/impactful-data-over-big-data/index.html</loc>
-    <lastmod>2023-06-03T01:20:52.313Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.alex-antonison.com/posts/tool-selection-framework/index.html</loc>
-    <lastmod>2023-06-03T01:20:52.981Z</lastmod>
+    <lastmod>2023-06-24T20:30:37.860Z</lastmod>
   </url>
   <url>
     <loc>https://www.alex-antonison.com/posts/the-process-of-data/index.html</loc>
-    <lastmod>2023-06-03T01:20:53.421Z</lastmod>
+    <lastmod>2023-06-24T20:30:36.688Z</lastmod>
   </url>
   <url>
-    <loc>https://www.alex-antonison.com/index.html</loc>
-    <lastmod>2023-06-03T01:20:53.961Z</lastmod>
+    <loc>https://www.alex-antonison.com/posts/hubspot-for-job-hunting/index.html</loc>
+    <lastmod>2023-06-24T20:30:35.724Z</lastmod>
   </url>
   <url>
-    <loc>https://www.alex-antonison.com/resume.html</loc>
-    <lastmod>2023-06-03T01:20:56.065Z</lastmod>
+    <loc>https://www.alex-antonison.com/posts/ethical-use-algorithms-and-data/index.html</loc>
+    <lastmod>2023-06-24T20:30:34.680Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.alex-antonison.com/posts/impactful-data-over-big-data/index.html</loc>
+    <lastmod>2023-06-24T20:30:33.728Z</lastmod>
   </url>
   <url>
     <loc>https://www.alex-antonison.com/talks.html</loc>
-    <lastmod>2023-06-03T01:20:56.617Z</lastmod>
+    <lastmod>2023-06-24T20:30:31.532Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.alex-antonison.com/index.html</loc>
+    <lastmod>2023-06-24T20:30:30.724Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.alex-antonison.com/resume.html</loc>
+    <lastmod>2023-06-24T20:30:33.268Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.alex-antonison.com/posts/venv-is-a-data-professionals-best-friend/index.html</loc>
+    <lastmod>2023-06-24T20:30:34.132Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.alex-antonison.com/posts/tool-selection-framework/index.html</loc>
+    <lastmod>2023-06-24T20:30:35.224Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.alex-antonison.com/posts/different-roles-in-data/index.html</loc>
+    <lastmod>2023-06-24T20:30:36.336Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.alex-antonison.com/resources.html</loc>
+    <lastmod>2023-06-24T20:30:37.560Z</lastmod>
   </url>
 </urlset>
