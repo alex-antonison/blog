@@ -6,21 +6,22 @@
       version="2.0">
 <channel>
 <title>Alex Antonison&#39;s Blog</title>
-<link>https://www.alex-antonison.com/index.html</link>
+<link>https://www.alex-antonison.com/</link>
 <atom:link href="https://www.alex-antonison.com/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <image>
 <url>https://www.alex-antonison.com/quarto.png</url>
 <title>Alex Antonison&#39;s Blog</title>
-<link>https://www.alex-antonison.com/index.html</link>
+<link>https://www.alex-antonison.com/</link>
 </image>
-<generator>quarto-1.3.450</generator>
+<generator>quarto-1.6.42</generator>
 <lastBuildDate>Fri, 02 Jun 2023 00:00:00 GMT</lastBuildDate>
 <item>
   <title>HubSpot for Job Hunting</title>
   <dc:creator>Alex Antonison</dc:creator>
-  <link>https://www.alex-antonison.com/posts/hubspot-for-job-hunting/index.html</link>
+  <link>https://www.alex-antonison.com/posts/hubspot-for-job-hunting/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -47,26 +48,26 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://www.alex-antonison.com/posts/hubspot-for-job-hunting/hubspot-companies-example.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">This is what my company view looks like with the fake company I set up for testing purposes.</figcaption>
+<figcaption>This is what my company view looks like with the fake company I set up for testing purposes.</figcaption>
 </figure>
 </div>
 <p>One more involved adjustment I wanted to make was to give myself a way of specifying a Type of company. By default, HubSpot <code>Company.Type</code> was tailored more towards sales but fortunately, you can go into their data model and customize various elements. You can accomplish this by going to Profile &amp; Preferences &gt; Data Management &gt; Objects &gt; Companies. From there, I changed Type to be Startup, Consulting, Recruitment, Company, and University.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://www.alex-antonison.com/posts/hubspot-for-job-hunting/hubspot-company-type-dropdown.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">This is the custom Company Type field dropbox I created</figcaption>
+<figcaption>This is the custom Company Type field dropbox I created</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://www.alex-antonison.com/posts/hubspot-for-job-hunting/hubspot-company-field-properties.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">You get to Company &gt; Type Edit property via Profile &amp; Preferences &gt; Data Management &gt; Objects &gt; Companies</figcaption>
+<figcaption>You get to Company &gt; Type Edit property via Profile &amp; Preferences &gt; Data Management &gt; Objects &gt; Companies</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://www.alex-antonison.com/posts/hubspot-for-job-hunting/hubspot-company-type-edit.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Once in the Type Object, you can customize the Types</figcaption>
+<figcaption>Once in the Type Object, you can customize the Types</figcaption>
 </figure>
 </div>
 </section>
@@ -76,20 +77,20 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://www.alex-antonison.com/posts/hubspot-for-job-hunting/hubspot-contact-entry-form.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Contact Entry Form</figcaption>
+<figcaption>Contact Entry Form</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://www.alex-antonison.com/posts/hubspot-for-job-hunting/hubspot-contacts-example.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">This is what my contacts view looks like. I recommend adding yourself as a contact as you can try things out like e-mail, scheduling, etc.</figcaption>
+<figcaption>This is what my contacts view looks like. I recommend adding yourself as a contact as you can try things out like e-mail, scheduling, etc.</figcaption>
 </figure>
 </div>
 <p>One feature that has been helpful for me is a built-in data quality feature for HubSpot where it will call out if you have already added someone with their e-mail as a contact.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://www.alex-antonison.com/posts/hubspot-for-job-hunting/hubspot-contact-data-quality.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">HubSpot Identifies Contacts with duplicate e-mails</figcaption>
+<figcaption>HubSpot Identifies Contacts with duplicate e-mails</figcaption>
 </figure>
 </div>
 </section>
@@ -99,21 +100,21 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://www.alex-antonison.com/posts/hubspot-for-job-hunting/hubspot-deals-to-job-applications.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">My initial pass at setting up the different stages of a job application process.</figcaption>
+<figcaption>My initial pass at setting up the different stages of a job application process.</figcaption>
 </figure>
 </div>
 <p>With that setup, I then tailored down the Deal submit form to be short so it would be quick add Job Applications. Also, I can tie those job applications to people and/or companies. In the Deal Description section, I put the Job’s URL so I can quickly bring up the information about the job.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://www.alex-antonison.com/posts/hubspot-for-job-hunting/hubspot-submit-job-application.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Job Application/Deal Entry Form</figcaption>
+<figcaption>Job Application/Deal Entry Form</figcaption>
 </figure>
 </div>
 <p>Since I can connect both a Company and Contacts to a Deal, in my Deal’s view I can see what job applications where I have had recently activity with the target company. I also included an “Amount” column that will be populated in the event I receive an offer from a company.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://www.alex-antonison.com/posts/hubspot-for-job-hunting/hubspot-deals-view.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">This is what my HubSpot Deals view looks like</figcaption>
+<figcaption>This is what my HubSpot Deals view looks like</figcaption>
 </figure>
 </div>
 </section>
@@ -124,14 +125,14 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://www.alex-antonison.com/posts/hubspot-for-job-hunting/hubspot-contact-activities.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">My example contact showing what you can capture</figcaption>
+<figcaption>My example contact showing what you can capture</figcaption>
 </figure>
 </div>
 <p>When you log anything, there is an option at the bottom to set up a “Follow up task” with either a default or custom follow up date. I have to say this is easily one of my favorite features since it streamlines setting up reminders to follow up.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://www.alex-antonison.com/posts/hubspot-for-job-hunting/hubspot-logging-an-email.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Example logging an activity</figcaption>
+<figcaption>Example logging an activity</figcaption>
 </figure>
 </div>
 </section>
@@ -155,15 +156,16 @@
 </section>
 
  ]]></description>
-  <guid>https://www.alex-antonison.com/posts/hubspot-for-job-hunting/index.html</guid>
+  <guid>https://www.alex-antonison.com/posts/hubspot-for-job-hunting/</guid>
   <pubDate>Fri, 02 Jun 2023 00:00:00 GMT</pubDate>
   <media:content url="https://www.alex-antonison.com/posts/hubspot-for-job-hunting/hubspot-post-logo.png" medium="image" type="image/png" height="86" width="144"/>
 </item>
 <item>
   <title>The Process of Data</title>
   <dc:creator>Alex Antonison</dc:creator>
-  <link>https://www.alex-antonison.com/posts/the-process-of-data/index.html</link>
+  <link>https://www.alex-antonison.com/posts/the-process-of-data/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -189,14 +191,15 @@
 
 
  ]]></description>
-  <guid>https://www.alex-antonison.com/posts/the-process-of-data/index.html</guid>
+  <guid>https://www.alex-antonison.com/posts/the-process-of-data/</guid>
   <pubDate>Mon, 24 Apr 2023 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Tool Selection Framework</title>
   <dc:creator>Alex Antonison</dc:creator>
-  <link>https://www.alex-antonison.com/posts/tool-selection-framework/index.html</link>
+  <link>https://www.alex-antonison.com/posts/tool-selection-framework/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -240,7 +243,7 @@
 <h4 class="anchored" data-anchor-id="spreadsheet">Spreadsheet</h4>
 <section id="overview-1" class="level5">
 <h5 class="anchored" data-anchor-id="overview-1">Overview</h5>
-<table class="table">
+<table class="caption-top table">
 <tbody>
 <tr class="odd">
 <td>Learning Curve</td>
@@ -276,7 +279,7 @@
 <h4 class="anchored" data-anchor-id="data-visualization-tools">Data Visualization Tools</h4>
 <section id="overview-2" class="level5">
 <h5 class="anchored" data-anchor-id="overview-2">Overview</h5>
-<table class="table">
+<table class="caption-top table">
 <tbody>
 <tr class="odd">
 <td>Learning Curve</td>
@@ -330,7 +333,7 @@
 <section id="overall-scoring" class="level5">
 <h5 class="anchored" data-anchor-id="overall-scoring">Overall Scoring</h5>
 <p>Below is a list of scores for several types of tools.</p>
-<table class="table">
+<table class="caption-top table">
 <colgroup>
 <col style="width: 62%">
 <col style="width: 20%">
@@ -370,14 +373,15 @@
 </section>
 
  ]]></description>
-  <guid>https://www.alex-antonison.com/posts/tool-selection-framework/index.html</guid>
+  <guid>https://www.alex-antonison.com/posts/tool-selection-framework/</guid>
   <pubDate>Wed, 01 Mar 2023 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Impactful Data &gt; Big Data</title>
   <dc:creator>Alex Antonison</dc:creator>
-  <link>https://www.alex-antonison.com/posts/impactful-data-over-big-data/index.html</link>
+  <link>https://www.alex-antonison.com/posts/impactful-data-over-big-data/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -429,15 +433,16 @@
   <category>data</category>
   <category>data engineering</category>
   <category>big data</category>
-  <guid>https://www.alex-antonison.com/posts/impactful-data-over-big-data/index.html</guid>
+  <guid>https://www.alex-antonison.com/posts/impactful-data-over-big-data/</guid>
   <pubDate>Tue, 22 Nov 2022 00:00:00 GMT</pubDate>
   <media:content url="https://www.alex-antonison.com/posts/impactful-data-over-big-data/funny-big-data.jpeg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>venv is a Data Professional’s Best Friend</title>
   <dc:creator>Alex Antonison</dc:creator>
-  <link>https://www.alex-antonison.com/posts/venv-is-a-data-professionals-best-friend/index.html</link>
+  <link>https://www.alex-antonison.com/posts/venv-is-a-data-professionals-best-friend/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -525,14 +530,15 @@ font-style: inherit;">"renv::snapshot()"</span></span></code></pre></div>
 </section>
 
  ]]></description>
-  <guid>https://www.alex-antonison.com/posts/venv-is-a-data-professionals-best-friend/index.html</guid>
+  <guid>https://www.alex-antonison.com/posts/venv-is-a-data-professionals-best-friend/</guid>
   <pubDate>Sat, 06 Feb 2021 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>What are the different roles in data?</title>
   <dc:creator>Alex Antonison</dc:creator>
-  <link>https://www.alex-antonison.com/posts/different-roles-in-data/index.html</link>
+  <link>https://www.alex-antonison.com/posts/different-roles-in-data/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -615,14 +621,15 @@ font-style: inherit;">"renv::snapshot()"</span></span></code></pre></div>
 </section>
 
  ]]></description>
-  <guid>https://www.alex-antonison.com/posts/different-roles-in-data/index.html</guid>
+  <guid>https://www.alex-antonison.com/posts/different-roles-in-data/</guid>
   <pubDate>Fri, 04 Oct 2019 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Ethical use of algorithms with data</title>
   <dc:creator>Alex Antonison</dc:creator>
-  <link>https://www.alex-antonison.com/posts/ethical-use-algorithms-and-data/index.html</link>
+  <link>https://www.alex-antonison.com/posts/ethical-use-algorithms-and-data/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -696,7 +703,7 @@ font-style: inherit;">"renv::snapshot()"</span></span></code></pre></div>
 </section>
 
  ]]></description>
-  <guid>https://www.alex-antonison.com/posts/ethical-use-algorithms-and-data/index.html</guid>
+  <guid>https://www.alex-antonison.com/posts/ethical-use-algorithms-and-data/</guid>
   <pubDate>Sat, 09 Mar 2019 00:00:00 GMT</pubDate>
 </item>
 </channel>
