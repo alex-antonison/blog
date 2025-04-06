@@ -14,8 +14,67 @@
 <title>Alex Antonison&#39;s Blog</title>
 <link>https://www.alex-antonison.com/</link>
 </image>
-<generator>quarto-1.6.42</generator>
-<lastBuildDate>Fri, 04 Apr 2025 00:00:00 GMT</lastBuildDate>
+<generator>quarto-1.6.43</generator>
+<lastBuildDate>Sun, 06 Apr 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>How to Build a Data Platform</title>
+  <dc:creator>Alex Antonison</dc:creator>
+  <link>https://www.alex-antonison.com/posts/how-to-build-a-data-platform/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Whenever building a data platform, it is very easy (and quite fun!) to first jump right into what is the latest and greatest technology and start doing proof-of-concepts (POCs) and evaluating which new tech solution out performs the rest. However, as I have progressed throughout my career, I have unfortunately seen that fail time and time again. At the end of the day, as a Data Engineering team, the goal is to provide value to a business. Data Engineering teams provide value via data products and more often than not, spending a significant amount of time trying to build a data platform that “does it all” will take far more time and money than a business will allow.</p>
+<section id="business-questions" class="level2">
+<h2 class="anchored" data-anchor-id="business-questions">Business Questions</h2>
+<p>The first step you should take is to answer the following business questions:</p>
+<ol type="1">
+<li><strong>Clear Business Problem Statement:</strong> Without a clear problem statement, the Data Engineering team has to develop a data platform that solves “all possible problems.” With a clear problem statement, it focuses the scope of the project and could highlight that data only needs to be updated hourly versus in near real time. Like any successful project, a clear business problem must be understood before anything else.</li>
+<li><strong>Team skillsets:</strong> Does the Data Engineering team consist of experienced Data Platform Engineers familiar with running open source big data solutions or is the team smaller and/or comprised of less experienced Data Engineers? In the absence of a larger and/or more experienced Data Engineering team, it is better to steer towards easier to use managed services. Additionally, hiring outside consultants with know-how to stand up more complex solutions can be problematic in that the existing team may not have the capacity nor knowledge to maintain it.</li>
+<li><strong>Existing Technology:</strong> What tools are currently being used across the company? Is there a Cloud Data Warehouse already being used? Is another team already using an orchestrator? It is always better to first evaluate what existing tooling is in place as other teams have already put in the work for tooling, deployment, negotiating pricing, etc.</li>
+<li><strong>Timeline:</strong> When does a solution need to be in place? If the timeline is short, you may need to consider starting with a more expensive managed service with a narrow focus and have a long term goal to implement a more scalable and cost efficient solution that can cover the whole problem. Even if the timeline is long, it is important to try and start small and get iterative feedback from stakeholders.</li>
+<li><strong>Data Infrastructure Budget:</strong> This one is tricky but very important. Some of the prior answers will largely dictate the data infrastructure budget depending on team makeup, timeline, and already available tools. In some cases, in order to initially provide value within budget, the scope of the business problem can be reduced (say instead of all markets, reduce to just a handful of key markets) to deliver a Data Platform that provides value and then can always be expanded.</li>
+</ol>
+</section>
+<section id="data-questions" class="level2">
+<h2 class="anchored" data-anchor-id="data-questions">Data Questions</h2>
+<p>Next, once the key business questions are sufficiently answered (and documented), you can move onto the 5Vs + S of data. This topic has been thoroughly covered so I will just highlight them below:</p>
+<ol type="1">
+<li>Volume: How much data is needed?</li>
+<li>Velocity: How frequent does the data need to be processed?</li>
+<li>Variety: What kind of data are you working with? Structured? Unstructured?</li>
+<li>Veracity: How trustworthy is the data source? Do you need to build data quality checks into the ingestion pipeline to catch bad data coming in?</li>
+<li>Value: How valuable is the data source?</li>
+<li>(Extra) Sensitive: When you are dealing with sensitive data, it is crucial to ensure that it is sufficiently protected at motion and at rest.</li>
+</ol>
+</section>
+<section id="poc-time" class="level2">
+<h2 class="anchored" data-anchor-id="poc-time">POC Time!</h2>
+<p><strong>Congratulations! With this information in hand, you can now start considering what tools will make sense to start doing POCs for a data platform.</strong></p>
+</section>
+<section id="engineering-topics-to-consider" class="level2">
+<h2 class="anchored" data-anchor-id="engineering-topics-to-consider">Engineering topics to consider</h2>
+<ol type="1">
+<li><strong>Manage only data that matters:</strong> While collecting and storing data in low-cost storage is acceptable, you should only actively manage data that ties to specific business problems. Avoid the temptation to “manage everything just in case”—this approach typically causes projects to exceed time and budget constraints. Instead, focus on managing crucial data while storing the rest. You can always make raw data available to analysts and stakeholders to help identify what’s valuable.</li>
+<li><strong>Developer Workflow:</strong> Creating a streamlined developer workflow is key. If the amount of time to iterate an idea is too long, it significantly hinders productivity.</li>
+<li><strong>Data Testing:</strong> Just like in Software Engineering, testing is crucial. Data Engineering teams must deliver trustworthy data. Without proper data tests, it’s impossible to detect if a data pipeline change might break downstream data products. Data tests can also reveal incorrect assumptions that would otherwise go unnoticed. Well-designed data tests can catch issues long before they affect end users’ data products.</li>
+<li><strong>Development Standards:</strong> In the absence of development standards, whether it be naming conventions, code formatting, or rules around documentation, even simple data platforms can become challenging to maintain. Fixing these problems down the road can also take a significant amount of work and requires rigorous testing to ensure nothing is broken during the refactor.</li>
+<li><strong>Clear Release Standards:</strong> Anytime a dataset is released, in the absence of clear release standards, it can be challenging to iterate, improve, and especially remove columns from a dataset as it could break downstream integrations or dashboards. It is important to establish upfront clear release standards around alpha, beta, and production grade datasets.</li>
+<li><strong>Data Governance:</strong> Data should only be shared with the appropriate users throughout an organization. It is always easier to do this sooner than later as taking away datasets can be disruptive to business processes and could lead to regulatory issues.</li>
+<li><strong>Data Curation and Discovery:</strong> It is important to ensure that datasets are sufficiently documented and communicated across an organization. For getting started it may entail just using the existing documentation tool of choice, but as the data platform grows, a data catalog may be needed to ensure datasets are discoverable across an organization.</li>
+</ol>
+<p>If you have gotten this far, I am sure you have noticed that I have not mentioned any specific technologies throughout this post largely because the tools themselves do not matter. What is important is figuring out how to break down business problems into solvable parts and identifying the right tool based on the above constraints.</p>
+<p>Happy building!</p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://www.alex-antonison.com/posts/how-to-build-a-data-platform/</guid>
+  <pubDate>Sun, 06 Apr 2025 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Introduction to a Data Lakehouse with AWS Athena, dbt, and Apache Iceberg - Part 1</title>
   <dc:creator>Alex Antonison</dc:creator>
