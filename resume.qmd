@@ -2,7 +2,7 @@
 title: "Resume"
 format:
   html:
-    embed-resources: true
+    allow-html: true
 ---
 
 <iframe 
