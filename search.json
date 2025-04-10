@@ -165,6 +165,6 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Project Name\nDescription\nLink\n\n\n\n\nProcessMassSpecData\nWorking with a research lab at the University of Florida to streamline calculating the concentration of analytes in samples from Mass spectrometry data.\nProcessMassSpecData"
+    "text": "Project Name\nDescription\nLink\n\n\n\n\nProcessMassSpecData\nWorking with a research lab at the University of Florida to streamline calculating the concentration of analytes in samples from Mass spectrometry data.\nProcessMassSpecData\n\n\nData Engineering Starter Project\nI set up a simple starter project for people I mentor to introduce them to key developer technologies like terraform and serverless and AWS services S3 and Lambda. The project also acts as good introduction to working on a project within GitHub.\nData Engineering Starter Project"
   }
 ]
