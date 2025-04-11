@@ -38,7 +38,7 @@ Next, once the key business questions are sufficiently answered (and documented)
 
 **Congratulations! With this information in hand, you can now start considering what tools will make sense to start doing POCs for a data platform.**
 
-## Engineering topics to consider
+## Other data topics to consider
 
 1. **Manage only data that matters:** Storing data in low-cost storage is perfectly acceptable, but active data management should be reserved for data that directly supports specific business problems. Resist the urge to "manage everything just in case"—this often leads to scope creep, missed deadlines, and budget overruns. Instead, prioritize managing high-impact data and keep the rest in accessible storage. Raw data can still be made available to analysts and stakeholders to help uncover what’s truly valuable over time.
 2. **Data Development Workflow:** Creating a streamlined data development workflow is essential. When the feedback loop for testing and iterating on ideas is too slow, it becomes a major bottleneck—dramatically reducing productivity and slowing innovation.
