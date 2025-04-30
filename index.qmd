@@ -22,7 +22,10 @@ format:
 ::: {.profile-header layout="[21,79]"}
 ![](images/alex_headshot.jpg){.profile-pic}
 
-Hello, I'm Alex Antonison. A Data Engineer with over a decade of experience across Government, Healthcare, and Environmental Science. One consistent focus has been to evaluate the process of data in an organization and identify opportunities to streamline data processing, management, and analytics. Once a process is mapped out, I work with stakeholders to identify solutions ensuring high quality data is timely, accessible, and easy to use.
+Data Engineer with 10+ years of experience delivering data-driven solutions across Government, Healthcare, and Environmental Science. I take a data product-oriented approach, working closely with stakeholders to define clear use cases and build solutions that drive meaningful outcomes. With a strong technical foundation, I can design and implement scalable data platforms that ensure data products are high-quality, timely, and easy to use.
+
+My core strengths include technical leadership, mentoring, data platform architecture, hands-on delivery, strategic alignment of technical solutions with business objectives, and clear communication of complex concepts to diverse audiences.
+
 :::
 
 ## 💼 Get In Touch
