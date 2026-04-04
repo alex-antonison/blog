@@ -45,13 +45,46 @@ body {
 }
 
 #post-list {
-    margin-top: 0.5rem;
+    margin-top: 0.3rem;
+    padding-left: 0;
+    list-style: none;
 }
 
 #post-list > li {
-    margin-bottom: 1.25rem;
-    padding-bottom: 1.15rem;
-    border-bottom: 1px solid #e7ebf1;
+    margin: 0;
+    padding: 0.75rem 0;
+    border: 0;
+}
+
+#post-list > li + li {
+    border-top: 1px solid #e7ebf1;
+}
+
+.post-item {
+    margin: 0;
+    padding: 0;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+.post-item-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 0;
+}
+
+.post-item-title {
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.35;
+}
+
+.post-item-date {
+    margin: 0;
+    white-space: nowrap;
+    font-size: 1.02rem;
 }
 
 #post-list .entry-content {
@@ -60,8 +93,8 @@ body {
 
 .post-meta {
     color: #5b6678;
-    font-size: 0.95rem;
-    margin-bottom: 0.75rem;
+    font-size: 1.02rem;
+    margin: 0;
 }
 
 .entry-content {
@@ -115,5 +148,15 @@ body {
     .profile-pic {
         width: 120px;
         height: 120px;
+    }
+
+    .post-item-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.15rem;
+    }
+
+    .post-item-date {
+        white-space: normal;
     }
 }
