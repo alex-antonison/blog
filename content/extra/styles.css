@@ -1,5 +1,67 @@
+:root {
+    color-scheme: light dark;
+    --bg: #f5f7fb;
+    --surface: #ffffff;
+    --surface-soft: #f8fafc;
+    --text: #1f2937;
+    --muted: #5b6678;
+    --border: #dbe2ee;
+    --link: #c93547;
+    --link-hover: #a01f35;
+    --hero-border: #e3e7ee;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #111722;
+        --surface: #161f2d;
+        --surface-soft: #1a2434;
+        --text: #e5ebf5;
+        --muted: #a9b6ca;
+        --border: #2a3a54;
+        --link: #ff7b8d;
+        --link-hover: #ff9bab;
+        --hero-border: #30425e;
+    }
+}
+
 body {
     line-height: 1.65;
+    background: var(--bg);
+    color: var(--text);
+}
+
+a {
+    color: var(--link);
+}
+
+a:hover,
+a:focus {
+    color: var(--link-hover);
+}
+
+#banner,
+#content,
+#extras,
+#contentinfo {
+    background: var(--surface);
+    color: var(--text);
+}
+
+#banner {
+    border-bottom: 1px solid var(--border);
+}
+
+#banner nav,
+#extras,
+#contentinfo {
+    border-color: var(--border);
+}
+
+#extras h2,
+#contentinfo,
+#contentinfo a {
+    color: var(--muted);
 }
 
 #banner h1 strong {
@@ -18,9 +80,9 @@ body {
 .home-hero {
     margin: 1.5rem auto 2rem;
     padding: 1.25rem;
-    border: 1px solid #e3e7ee;
+    border: 1px solid var(--hero-border);
     border-radius: 12px;
-    background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+    background: linear-gradient(180deg, var(--surface-soft) 0%, var(--surface) 100%);
 }
 
 .home-hero-grid {
@@ -63,7 +125,7 @@ body {
 }
 
 #post-list > li + li {
-    border-top: 1px solid #e7ebf1;
+    border-top: 1px solid var(--border);
 }
 
 .post-item {
@@ -98,7 +160,7 @@ body {
 }
 
 .post-meta {
-    color: #5b6678;
+    color: var(--muted);
     font-size: 1.02rem;
     margin: 0;
 }
@@ -126,14 +188,14 @@ body {
 
 .entry-content th,
 .entry-content td {
-    border: 1px solid #d8dfea;
+    border: 1px solid var(--border);
     padding: 0.5rem 0.65rem;
     vertical-align: top;
     text-align: left;
 }
 
 .entry-content th {
-    background: #f4f7fb;
+    background: var(--surface-soft);
 }
 
 .entry-content iframe {
@@ -143,7 +205,7 @@ body {
 .comments-section {
     margin-top: 2.5rem;
     padding-top: 1rem;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid var(--border);
 }
 
 @media (max-width: 700px) {
