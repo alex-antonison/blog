@@ -3,6 +3,7 @@
     --bg: #f5f7fb;
     --surface: #ffffff;
     --surface-soft: #f8fafc;
+    --surface-strong: #eef3fb;
     --text: #1f2937;
     --muted: #5b6678;
     --border: #dbe2ee;
@@ -16,6 +17,7 @@
         --bg: #111722;
         --surface: #161f2d;
         --surface-soft: #1a2434;
+        --surface-strong: #121a28;
         --text: #e5ebf5;
         --muted: #a9b6ca;
         --border: #2a3a54;
@@ -52,10 +54,43 @@ a:focus {
     border-bottom: 1px solid var(--border);
 }
 
+#banner h1,
+#banner h2,
+#banner h3,
+#content h1,
+#content h2,
+#content h3,
+#extras h2 {
+    color: var(--text);
+}
+
+#banner h1 a {
+    color: var(--text) !important;
+    text-decoration: none;
+}
+
 #banner nav,
 #extras,
 #contentinfo {
     border-color: var(--border);
+}
+
+#banner nav {
+    background: var(--surface-strong);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    box-shadow: none;
+}
+
+#banner nav a {
+    color: var(--text) !important;
+    text-shadow: none;
+    font-weight: 600;
+}
+
+#banner nav a:hover,
+#banner nav a:focus {
+    color: var(--link-hover) !important;
 }
 
 #extras h2,
@@ -67,7 +102,8 @@ a:focus {
 #banner h1 strong {
     display: block;
     margin-top: 0.35rem;
-    font-size: 0.92rem;
+    font-size: 1.3rem;
+    line-height: 1.3;
     font-weight: 500;
     opacity: 0.85;
 }
@@ -75,6 +111,13 @@ a:focus {
 #content,
 .body {
     max-width: 980px;
+}
+
+#content {
+    margin-top: 1rem;
+    padding: 1rem 1.25rem;
+    border: 1px solid var(--border);
+    border-radius: 12px;
 }
 
 .home-hero {
@@ -108,7 +151,7 @@ a:focus {
     height: 180px;
     object-fit: cover;
     border-radius: 50%;
-    border: 3px solid #fff;
+    border: 3px solid var(--surface);
     box-shadow: 0 2px 10px rgba(18, 26, 40, 0.15);
 }
 
@@ -149,6 +192,15 @@ a:focus {
     line-height: 1.35;
 }
 
+.post-item-title a {
+    color: var(--link);
+}
+
+.post-item-title a:hover,
+.post-item-title a:focus {
+    color: var(--link-hover);
+}
+
 .post-item-date {
     margin: 0;
     white-space: nowrap;
@@ -163,6 +215,14 @@ a:focus {
     color: var(--muted);
     font-size: 1.02rem;
     margin: 0;
+}
+
+#extras,
+#contentinfo {
+    margin-top: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 0.9rem 1.1rem;
 }
 
 .entry-content {
