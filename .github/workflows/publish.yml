@@ -1,9 +1,10 @@
+name: Pelican Publish
+
 on:
   workflow_dispatch:
   push:
-    branches: main
-
-name: Quarto Publish
+    branches:
+      - main
 
 jobs:
   build-deploy:
@@ -12,14 +13,25 @@ jobs:
       contents: write
     steps:
       - name: Check out repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
-      - name: Set up Quarto
-        uses: quarto-dev/quarto-actions/setup@v2
-
-      - name: Render and Publish
-        uses: quarto-dev/quarto-actions/publish@v2
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          target: gh-pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          python-version: "3.14"
+
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v4
+
+      - name: Sync dependencies
+        run: uv sync --frozen
+
+      - name: Build site
+        run: uv run pelican content -s publishconf.py -o output
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./output
+          publish_branch: gh-pages

@@ -1,8 +1,7 @@
----
-title: "Projects"
----
+Title: Projects
+Slug: projects
+
 
 | Project Name        | Description                                                                                                                                              | Link                                                                            |
 |-----------|---------------------------------------------------|-----------|
-| ProcessMassSpecData | Working with a research lab at the University of Florida to streamline calculating the concentration of analytes in samples from Mass spectrometry data. | <a href="https://github.com/alex-antonison/ProcessMassSpecData" target="_blank">ProcessMassSpecData</a>  |
 | Data Engineering Starter Project | I set up a simple starter project for people I mentor to introduce them to key developer technologies like terraform and serverless and AWS services S3 and Lambda. The project also acts as good introduction to working on a project within GitHub. | <a href="https://github.com/alex-antonison/data-project-base" target="_blank">Data Engineering Starter Project</a>  |

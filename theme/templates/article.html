@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block title %}{{ article.title|striptags }}{% endblock %}
+
+{% block content %}
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">{{ article.title }}</h1>
+      <p class="post-meta">
+        {% if article.author %}
+        <span>By {{ article.author }}</span>
+        {% endif %}
+        {% if article.date %}
+        <span> | {{ article.locale_date }}</span>
+        {% endif %}
+      </p>
+    </header>
+
+    <div class="entry-content">
+      {{ article.content }}
+    </div>
+  </article>
+
+  {% if GISCUS_ENABLED and GISCUS_REPO_ID != "REPLACE_WITH_REPO_ID" and GISCUS_CATEGORY_ID != "REPLACE_WITH_CATEGORY_ID" %}
+  <section class="comments-section">
+    <h2>Comments</h2>
+    <script
+      src="https://giscus.app/client.js"
+      data-repo="{{ GISCUS_REPO }}"
+      data-repo-id="{{ GISCUS_REPO_ID }}"
+      data-category="{{ GISCUS_CATEGORY }}"
+      data-category-id="{{ GISCUS_CATEGORY_ID }}"
+      data-mapping="{{ GISCUS_MAPPING }}"
+      data-strict="{{ GISCUS_STRICT }}"
+      data-reactions-enabled="{{ GISCUS_REACTIONS_ENABLED }}"
+      data-emit-metadata="{{ GISCUS_EMIT_METADATA }}"
+      data-input-position="{{ GISCUS_INPUT_POSITION }}"
+      data-theme="{{ GISCUS_THEME }}"
+      data-lang="{{ GISCUS_LANG }}"
+      data-loading="{{ GISCUS_LOADING }}"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </section>
+  {% endif %}
+</section>
+{% endblock %}
