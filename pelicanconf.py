@@ -31,7 +31,6 @@ EXTRA_PATH_METADATA = {
 MENUITEMS = [
     ("Blog", "/"),
     ("Talks", "/talks/"),
-    ("Resources", "/resources/"),
     ("Projects", "/projects/"),
     ("Resume", "/resume/"),
 ]
