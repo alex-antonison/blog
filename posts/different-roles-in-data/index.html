@@ -1,688 +1,139 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="Pelican" />
+    <title>What are the different roles in data?</title>
+    <link rel="stylesheet" href="https://www.alex-antonison.com/theme/css/main.css" />
+    <link rel="stylesheet" href="https://www.alex-antonison.com/styles.css" />
+    <link href="https://www.alex-antonison.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="A Thoughtful Data Nerd Atom Feed" />
+  </head>
 
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-<meta name="author" content="Alex Antonison">
-<meta name="dcterms.date" content="2019-10-04">
-
-<title>What are the different roles in data? – Alex Antonison’s Blog</title>
-<style>
-code{white-space: pre-wrap;}
-span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
-div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-ul.task-list{list-style: none;}
-ul.task-list li input[type="checkbox"] {
-  width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
-  vertical-align: middle;
-}
-</style>
-
-
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-2fef5ea3f8957b3e4ecc936fc74692ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-d37a41727e4f93f30118ee0bfac05f63.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
-<script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
-  "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
-    "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
-  }
-}</script>
-
-
-<link rel="stylesheet" href="../../styles.css">
-</head>
-
-<body class="nav-fixed quarto-light">
-
-<div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
-<span class="menu-text">Blog</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../talks.html"> 
-<span class="menu-text">Talks</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../resources.html"> 
-<span class="menu-text">Resources</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../projects.html"> 
-<span class="menu-text">Projects</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../resume.html"> 
-<span class="menu-text">Resume</span></a>
-  </li>  
-</ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/alex-antonison"> <i class="bi bi-github" role="img">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/alexantonison/"> <i class="bi bi-linkedin" role="img">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
-</div>
-      </div> <!-- /container-fluid -->
-    </nav>
-</header>
-<!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">What are the different roles in data?</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p>Alex Antonison </p>
-            </div>
-    </div>
-      
-      <div>
-      <div class="quarto-title-meta-heading">Published</div>
-      <div class="quarto-title-meta-contents">
-        <p class="date">October 4, 2019</p>
+  <body id="index" class="home">
+    <header id="banner" class="body">
+      <div class="banner-top">
+        <h1>
+          <a href="https://www.alex-antonison.com/">A Thoughtful Data Nerd <strong>Data engineering, architecture, and technical leadership</strong></a>
+        </h1>
+        <ul class="banner-socials" aria-label="Social links">
+          <li>
+            <a href="https://www.linkedin.com/in/alexantonison/" class="social-icon social-icon-linkedin" aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noopener noreferrer">
+              <span class="sr-only">LinkedIn</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/alex-antonison" class="social-icon social-icon-github" aria-label="GitHub" title="GitHub" target="_blank" rel="noopener noreferrer">
+              <span class="sr-only">GitHub</span>
+            </a>
+          </li>
+        </ul>
       </div>
-    </div>
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
-<!-- sidebar -->
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a></li>
-  <li><a href="#working-in-data" id="toc-working-in-data" class="nav-link" data-scroll-target="#working-in-data">Working in data</a></li>
-  <li><a href="#the-different-roles" id="toc-the-different-roles" class="nav-link" data-scroll-target="#the-different-roles">The different roles</a></li>
-  <li><a href="#overall-suggestions-when-working-in-data" id="toc-overall-suggestions-when-working-in-data" class="nav-link" data-scroll-target="#overall-suggestions-when-working-in-data">Overall Suggestions when working in Data</a></li>
-  <li><a href="#updates" id="toc-updates" class="nav-link" data-scroll-target="#updates">Updates</a></li>
-  </ul>
-</nav>
-    </div>
-<!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+      <nav>
+        <ul>
+          <li><a href="/">Blog</a></li>
+          <li><a href="/talks/">Talks</a></li>
+          <li><a href="/projects/">Projects</a></li>
+          <li><a href="/resume/">Resume</a></li>
+        </ul>
+      </nav>
+    </header>
 
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">What are the different roles in data?</h1>
+      <p class="post-meta">
+        <span>By Alex Antonison</span>
+        <span> | Fri 04 October 2019</span>
+      </p>
+    </header>
 
-
-
-
-<section id="preface" class="level3">
-<h3 class="anchored" data-anchor-id="preface">Preface</h3>
+    <div class="entry-content">
+      <h3 id="preface"><a class="toclink" href="#preface">Preface</a></h3>
 <p>The intended audience for this post are people interested in getting into data or businesses looking to use data to drive business value. With this in mind, I attempted to stay high level and provide enough information and key words for someone to find more in-depth resources on any given topic. Additionally, when highlighting skills, I focus on what I have observed being commonly used in industry based on experience, combing through job postings, and networking.</p>
-</section>
-<section id="working-in-data" class="level3">
-<h3 class="anchored" data-anchor-id="working-in-data">Working in data</h3>
+<h3 id="working-in-data"><a class="toclink" href="#working-in-data">Working in data</a></h3>
 <p>In my experience, working in data can at times be a bit confusing and overwhelming because of the sheer breadth of skills and techniques that are needed to process, manage, and analyze data. In this post, I am going to group these sets of skills into different roles, highlight the order in which they should be built out in an organization, and emphasize the importance of only focusing on one role at a time. As someone who has done work in each of these areas, my effectiveness was significantly reduced when I had to wear multiple hats.The four roles I will be focusing on in this post are Data Analyst, Data Engineer, Data Scientist, and Machine Learning Engineer. While some of these roles can be broken down to be more specific, my goal of this blog post is to stay high level and emphasize broad concepts around each role. Additionally, there are other important roles such as Data Governance and Privacy and Data Curation which I will not be covering as this post is meant to be an introduction to a data team in an organization.</p>
 <p>And one last thing, although I do not advise trying to perform multiple roles at once, I think it can be beneficial if given the opportunity to try different roles and see what you enjoy most.</p>
-</section>
-<section id="the-different-roles" class="level3">
-<h3 class="anchored" data-anchor-id="the-different-roles">The different roles</h3>
-<p><img src="data-organization-diagram.png" class="img-fluid"></p>
-<section id="the-data-analyst---describes-data" class="level4">
-<h4 class="anchored" data-anchor-id="the-data-analyst---describes-data"><strong>The Data Analyst - Describes Data</strong></h4>
+<h3 id="the-different-roles"><a class="toclink" href="#the-different-roles">The different roles</a></h3>
+<p><img alt="Data team roles diagram" src="/images/data-organization-diagram.png"></p>
+<h4 id="the-data-analyst-describes-data"><a class="toclink" href="#the-data-analyst-describes-data"><strong>The Data Analyst - Describes Data</strong></a></h4>
 <p>In my opinion, the Data Analyst is at the heart of a data team. Their focus should be to describe data to help drive business value.</p>
-<p>A Data Analyst should be the first role a company should hire and the expectations should be for them to come in and work with stakeholders and leadership to understand a company’s goals and business problems and how data can help drive value. Once a company’s goals and business problems have been clearly defined, the Data Analyst should seek out data, wrangle it to make it <code>tidy</code> (see <a href="https://vita.had.co.nz/papers/tidy-data.pdf">Tidy Data</a> by Hadley Wickham), and then deliver reports and/or dashboards to communicate the results. The Data Analyst is what I consider more of an operational role that helps a business measure key indicators to help understand the state of their business as well as make data driven decisions.</p>
+<p>A Data Analyst should be the first role a company should hire and the expectations should be for them to come in and work with stakeholders and leadership to understand a company's goals and business problems and how data can help drive value. Once a company's goals and business problems have been clearly defined, the Data Analyst should seek out data, wrangle it to make it <code>tidy</code> (see <a href="https://vita.had.co.nz/papers/tidy-data.pdf">Tidy Data</a> by Hadley Wickham), and then deliver reports and/or dashboards to communicate the results. The Data Analyst is what I consider more of an operational role that helps a business measure key indicators to help understand the state of their business as well as make data driven decisions.</p>
 <p><em>Key areas:</em> data wrangling - data exploration - business intelligence - building dashboards (Key Performance Indicators (KPI), Operational) using tools like <a href="https://www.tableau.com/">Tableau</a>, <a href="https://powerbi.microsoft.com/en-us/">PowerBI</a>, <a href="https://looker.com/">Looker</a> - building reports using tools like SQL Server Reporting Services (<a href="https://docs.microsoft.com/en-us/sql/reporting-services/create-deploy-and-manage-mobile-and-paginated-reports?view=sql-server-2017">SSRS</a>) - SQL - (optional but recommended) R or Python</p>
-</section>
-<section id="the-data-engineer---scales-data" class="level4">
-<h4 class="anchored" data-anchor-id="the-data-engineer---scales-data"><strong>The Data Engineer - Scales Data</strong></h4>
-<p>The Data Engineer’s role is to scale an organization’s data ingestion and management.</p>
+<h4 id="the-data-engineer-scales-data"><a class="toclink" href="#the-data-engineer-scales-data"><strong>The Data Engineer - Scales Data</strong></a></h4>
+<p>The Data Engineer's role is to scale an organization's data ingestion and management.</p>
 <p>Once a company has a firm understanding of their goals and business problems where data can help drive value, a Data Engineer can come in scale and build upon existing data processes. By scale, I mean the <a href="https://whatis.techtarget.com/definition/3Vs">3Vs of data</a>(volume, variety, and velocity) and the ability to build automated data pipelines capable of bringing in data at the frequency a business needs to support applications, reports, dashboards, and analyses. Not only should a Data Engineer focus on <a href="https://en.wikipedia.org/wiki/Extract,_transform,_load">Extract, transform, load (ETL)</a> or <a href="https://en.wikipedia.org/wiki/Extract,_load,_transform">Extract, load, transform (ELT)</a>, they should also have a good understanding of how to build optimized data warehouses/marts/stores to be useful for end users. Lastly, a Data Engineer should understand the concept of building production code, and by that I mean it needs to work consistently and reliably. In the event of an inevitable failure, it needs to fail reliably and have adequate logging so the issue can be debugged and resolved as efficiently as possible.</p>
 <p><em>Key Areas:</em> concept of production code - optimized data warehousing/mart/store - <a href="https://en.wikipedia.org/wiki/Extract,_transform,_load">Extract, transform, load (ETL)</a> or <a href="https://en.wikipedia.org/wiki/Extract,_load,_transform">Extract, load, transform (ELT)</a> - data pipelines - automation - streaming data - web scraping - tools like <a href="https://www.talend.com/">Talend</a> or <a href="https://www.informatica.com">Informatica</a> - SQL - Python - docker</p>
-<p><strong>—————————————————————</strong></p>
+<p><strong>---------------------------------------------------------------</strong></p>
 <p><em>Most companies can be highly successful doing Data Analytics and Engineering well. Without these two areas in place, a Data Scientist will be ineffective since they will simply be doing a combination of Data Analytics/Engineering. Often times this leads to mismatched skill sets and expectations on both the side of the organization as well as the Data Scientist.</em></p>
-<p><strong>—————————————————————</strong></p>
-</section>
-<section id="the-data-scientist---models-data" class="level4">
-<h4 class="anchored" data-anchor-id="the-data-scientist---models-data"><strong>The Data Scientist - Models Data</strong></h4>
+<p><strong>---------------------------------------------------------------</strong></p>
+<h4 id="the-data-scientist-models-data"><a class="toclink" href="#the-data-scientist-models-data"><strong>The Data Scientist - Models Data</strong></a></h4>
 <p>The role of the Data Scientist is to use machine learning and statistical techniques to develop models of data capable of predictions or prescriptions.</p>
-<p>These models should have a focus on enhancing a business’ existing processes or develop new products that are not as feasible without machine learning techniques. This is more of a strategic role where often times the goal is to build upon the existing Data Analytic work. Similar to that of a Data Analyst, a Data Scientist will need to do data exploration and visualization to gain a better understanding of the data. Additionally, they will need to interact with business stakeholders to gain a firm understanding of company goals and business problems to help guide what models can be built that can drive value.</p>
+<p>These models should have a focus on enhancing a business' existing processes or develop new products that are not as feasible without machine learning techniques. This is more of a strategic role where often times the goal is to build upon the existing Data Analytic work. Similar to that of a Data Analyst, a Data Scientist will need to do data exploration and visualization to gain a better understanding of the data. Additionally, they will need to interact with business stakeholders to gain a firm understanding of company goals and business problems to help guide what models can be built that can drive value.</p>
 <p><em>Key Areas:</em> feature engineering - statistical analysis - building / tuning / evaluating machine learning models - natural language processing - computer vision - R or Python - SQL</p>
-</section>
-<section id="the-machine-learning-engineer---scale-models" class="level4">
-<h4 class="anchored" data-anchor-id="the-machine-learning-engineer---scale-models"><strong>The Machine Learning Engineer - Scale Models</strong></h4>
+<h4 id="the-machine-learning-engineer-scale-models"><a class="toclink" href="#the-machine-learning-engineer-scale-models"><strong>The Machine Learning Engineer - Scale Models</strong></a></h4>
 <p>The role of the Machine Learning Engineer is to scale models by deploying and managing them in a production environment.</p>
 <p>A Machine Learning Engineer should work closely with the Data Science, Data Engineering, and Software Development teams to understand how a model needs to be deployed and build out necessary tools, APIs, or batch processes. Additionally, a Machine Learning Engineer needs to think about putting in place tools that will evaluate model performance and look for model drift to evaluate if a model needs to be retrained (great blog about this topic <a href="https://mlinproduction.com/model-retraining/">The Ultimate Guide to Model Retraining</a>). Like a Data Engineer, they need to have a concept of production code since once a model is deployed, it is often their responsibility to ensure predictions are not only being returned but that they meet the necessary expectations.</p>
 <p><em>Key Areas:</em> model drift - model retraining - the concept of production code - evaluation of models in production - machine learning - feature engineering - Python - SQL - docker - automation</p>
-</section>
-</section>
-<section id="overall-suggestions-when-working-in-data" class="level3">
-<h3 class="anchored" data-anchor-id="overall-suggestions-when-working-in-data">Overall Suggestions when working in Data</h3>
+<h3 id="overall-suggestions-when-working-in-data"><a class="toclink" href="#overall-suggestions-when-working-in-data">Overall Suggestions when working in Data</a></h3>
 <ul>
-<li><strong>Focus on the business problem</strong> - When starting data projects, it is easy to get distracted by all of the different available technologies. However, it is important to first focus on solving the business problem at hand versus using current “state of the art” solutions.</li>
-<li><strong>Be intentional with technology selection</strong> - Whenever introducing a new piece of technology or programming language to a company, it is crucial to consider the consequences. Adding new technologies increases the overall complexity of a company’s technology stack as well as often times reducing collaboration and consumption of work across teams.</li>
-<li><strong>Source Control</strong> - Regardless of role, I highly recommend all code (including SQL) is managed in a source control platform. By managing code through a source control platform, you can ensure code is accessible and changes to it over time can be tracked and managed. Depending on your team’s maturity and needs, I suggest checking out either <a href="https://trunkbaseddevelopment.com/">Trunk Based</a> or a <a href="https://nvie.com/posts/a-successful-git-branching-model/">Gitflow</a> Development Strategy.
-<ul>
+<li><strong>Focus on the business problem</strong> - When starting data projects, it is easy to get distracted by all of the different available technologies. However, it is important to first focus on solving the business problem at hand versus using current "state of the art" solutions.</li>
+<li><strong>Be intentional with technology selection</strong> - Whenever introducing a new piece of technology or programming language to a company, it is crucial to consider the consequences. Adding new technologies increases the overall complexity of a company's technology stack as well as often times reducing collaboration and consumption of work across teams.</li>
+<li><strong>Source Control</strong> - Regardless of role, I highly recommend all code (including SQL) is managed in a source control platform. By managing code through a source control platform, you can ensure code is accessible and changes to it over time can be tracked and managed. Depending on your team's maturity and needs, I suggest checking out either <a href="https://trunkbaseddevelopment.com/">Trunk Based</a> or a <a href="https://nvie.com/posts/a-successful-git-branching-model/">Gitflow</a> Development Strategy.<ul>
 <li>Some popular source control platforms are <a href="https://github.com/">GitHub</a>, <a href="https://about.gitlab.com/">GitLab</a>, and <a href="https://bitbucket.org/product">BitBucket</a></li>
 <li>In instances where Data Analysts or Data Scientists are doing analyses or ad-hoc requests, I recommend having a single repository where the code for these requests are stored and managed with loose processes around merging. This will help ensure the code is located in a more discoverable and central location. With that, a more restrictive repository(s) should be in place that requires reviews for managing code related to specific project work.</li>
-</ul></li>
+</ul>
+</li>
 <li><strong>Cloud computing</strong> is becoming more common place when working with data in organizations. AWS, Microsoft Azure, and Google all offer free tiers that can allow you to get some hands on experience even if your organization does not use cloud computing.</li>
-<li><strong>Package management</strong> - With respect to R and Python, I suggest looking into utilities to manage packages to help with reproducibility.
-<ul>
+<li><strong>Package management</strong> - With respect to R and Python, I suggest looking into utilities to manage packages to help with reproducibility.<ul>
 <li>For R you I suggest using <a href="https://github.com/rstudio/renv">renv</a> over packrat as it is much more efficient at managing packages.</li>
 <li>For Python, I suggest using <a href="https://docs.python.org/3/library/venv.html">venv</a>. It is simple and I have never had issues using it yet.</li>
 <li>If you are new to Python, I also recommend checking out <a href="https://www.anaconda.com/distribution/">Anaconda</a>. However, I will admit my experiences with using it to manage and share environments has not been great. I only recommend Anaconda as it allows you to more easily get started in Python.</li>
-</ul></li>
-<li><strong>Docker</strong> - While managing packages is helpful, docker allows you to manage the entire environment of a script which ensures reproducibility. <em>Dev Ops people will love you.</em>
-<ul>
+</ul>
+</li>
+<li><strong>Docker</strong> - While managing packages is helpful, docker allows you to manage the entire environment of a script which ensures reproducibility. <em>Dev Ops people will love you.</em><ul>
 <li>A good resource for doing this in R is <a href="https://colinfay.me/docker-r-reproducibility/">An Introduction to Docker for R Users</a> by Colin Fay</li>
 <li>A good resource for Python is <a href="https://www.fullstackpython.com/docker.html">Docker</a></li>
-</ul></li>
 </ul>
-</section>
-<section id="updates" class="level3">
-<h3 class="anchored" data-anchor-id="updates">Updates</h3>
-<section id="section" class="level4">
-<h4 class="anchored" data-anchor-id="section">2019-12-08</h4>
+</li>
+</ul>
+<h3 id="updates"><a class="toclink" href="#updates">Updates</a></h3>
+<h4 id="2019-12-08"><a class="toclink" href="#2019-12-08">2019-12-08</a></h4>
 <ul>
 <li>renv is now offered on cran, yay!</li>
 <li>Changed the method of suggest python environment management to being venv based on research and testing for consistently and reliably setting up and management environments in python.</li>
 </ul>
-
-
-</section>
-</section>
-
-</main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
-  window.document.addEventListener("DOMContentLoaded", function (event) {
-    const icon = "";
-    const anchorJS = new window.AnchorJS();
-    anchorJS.options = {
-      placement: 'right',
-      icon: icon
-    };
-    anchorJS.add('.anchored');
-    const isCodeAnnotation = (el) => {
-      for (const clz of el.classList) {
-        if (clz.startsWith('code-annotation-')) {                     
-          return true;
-        }
-      }
-      return false;
-    }
-    const onCopySuccess = function(e) {
-      // button target
-      const button = e.trigger;
-      // don't keep focus
-      button.blur();
-      // flash "checked"
-      button.classList.add('code-copy-button-checked');
-      var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
-      let tooltip;
-      if (window.bootstrap) {
-        button.setAttribute("data-bs-toggle", "tooltip");
-        button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
-        tooltip = new bootstrap.Tooltip(button, 
-          { trigger: "manual", 
-            customClass: "code-copy-button-tooltip",
-            offset: [0, -8]});
-        tooltip.show();    
-      }
-      setTimeout(function() {
-        if (tooltip) {
-          tooltip.hide();
-          button.removeAttribute("data-bs-title");
-          button.removeAttribute("data-bs-toggle");
-          button.removeAttribute("data-bs-placement");
-        }
-        button.setAttribute("title", currentTitle);
-        button.classList.remove('code-copy-button-checked');
-      }, 1000);
-      // clear code selection
-      e.clearSelection();
-    }
-    const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
-        }
-        return codeEl.innerText;
-    }
-    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-      text: getTextToCopy
-    });
-    clipboard.on('success', onCopySuccess);
-    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-        text: getTextToCopy,
-        container: window.document.getElementById('quarto-embedded-source-code-modal')
-      });
-      clipboardModal.on('success', onCopySuccess);
-    }
-      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/www\.alex-antonison\.com\/");
-      var isInternal = (href) => {
-          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-      }
-      // Inspect non-navigation links and adorn them if external
-     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-      for (var i=0; i<links.length; i++) {
-        const link = links[i];
-        if (!isInternal(link.href)) {
-          // undo the damage that might have been done by quarto-nav.js in the case of
-          // links that we want to consider external
-          if (link.dataset.originalHref !== undefined) {
-            link.href = link.dataset.originalHref;
-          }
-        }
-      }
-    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-      const config = {
-        allowHTML: true,
-        maxWidth: 500,
-        delay: 100,
-        arrow: false,
-        appendTo: function(el) {
-            return el.parentElement;
-        },
-        interactive: true,
-        interactiveBorder: 10,
-        theme: 'quarto',
-        placement: 'bottom-start',
-      };
-      if (contentFn) {
-        config.content = contentFn;
-      }
-      if (onTriggerFn) {
-        config.onTrigger = onTriggerFn;
-      }
-      if (onUntriggerFn) {
-        config.onUntrigger = onUntriggerFn;
-      }
-      window.tippy(el, config); 
-    }
-    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-    for (var i=0; i<noterefs.length; i++) {
-      const ref = noterefs[i];
-      tippyHover(ref, function() {
-        // use id or data attribute instead here
-        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-        try { href = new URL(href).hash; } catch {}
-        const id = href.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note) {
-          return note.innerHTML;
-        } else {
-          return "";
-        }
-      });
-    }
-    const xrefs = window.document.querySelectorAll('a.quarto-xref');
-    const processXRef = (id, note) => {
-      // Strip column container classes
-      const stripColumnClz = (el) => {
-        el.classList.remove("page-full", "page-columns");
-        if (el.children) {
-          for (const child of el.children) {
-            stripColumnClz(child);
-          }
-        }
-      }
-      stripColumnClz(note)
-      if (id === null || id.startsWith('sec-')) {
-        // Special case sections, only their first couple elements
-        const container = document.createElement("div");
-        if (note.children && note.children.length > 2) {
-          container.appendChild(note.children[0].cloneNode(true));
-          for (let i = 1; i < note.children.length; i++) {
-            const child = note.children[i];
-            if (child.tagName === "P" && child.innerText === "") {
-              continue;
-            } else {
-              container.appendChild(child.cloneNode(true));
-              break;
-            }
-          }
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(container);
-          }
-          return container.innerHTML
-        } else {
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(note);
-          }
-          return note.innerHTML;
-        }
-      } else {
-        // Remove any anchor links if they are present
-        const anchorLink = note.querySelector('a.anchorjs-link');
-        if (anchorLink) {
-          anchorLink.remove();
-        }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(note);
-        }
-        if (note.classList.contains("callout")) {
-          return note.outerHTML;
-        } else {
-          return note.innerHTML;
-        }
-      }
-    }
-    for (var i=0; i<xrefs.length; i++) {
-      const xref = xrefs[i];
-      tippyHover(xref, undefined, function(instance) {
-        instance.disable();
-        let url = xref.getAttribute('href');
-        let hash = undefined; 
-        if (url.startsWith('#')) {
-          hash = url;
-        } else {
-          try { hash = new URL(url).hash; } catch {}
-        }
-        if (hash) {
-          const id = hash.replace(/^#\/?/, "");
-          const note = window.document.getElementById(id);
-          if (note !== null) {
-            try {
-              const html = processXRef(id, note.cloneNode(true));
-              instance.setContent(html);
-            } finally {
-              instance.enable();
-              instance.show();
-            }
-          } else {
-            // See if we can fetch this
-            fetch(url.split('#')[0])
-            .then(res => res.text())
-            .then(html => {
-              const parser = new DOMParser();
-              const htmlDoc = parser.parseFromString(html, "text/html");
-              const note = htmlDoc.getElementById(id);
-              if (note !== null) {
-                const html = processXRef(id, note);
-                instance.setContent(html);
-              } 
-            }).finally(() => {
-              instance.enable();
-              instance.show();
-            });
-          }
-        } else {
-          // See if we can fetch a full url (with no hash to target)
-          // This is a special case and we should probably do some content thinning / targeting
-          fetch(url)
-          .then(res => res.text())
-          .then(html => {
-            const parser = new DOMParser();
-            const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.querySelector('main.content');
-            if (note !== null) {
-              // This should only happen for chapter cross references
-              // (since there is no id in the URL)
-              // remove the first header
-              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-                note.children[0].remove();
-              }
-              const html = processXRef(null, note);
-              instance.setContent(html);
-            } 
-          }).finally(() => {
-            instance.enable();
-            instance.show();
-          });
-        }
-      }, function(instance) {
-      });
-    }
-        let selectedAnnoteEl;
-        const selectorForAnnotation = ( cell, annotation) => {
-          let cellAttr = 'data-code-cell="' + cell + '"';
-          let lineAttr = 'data-code-annotation="' +  annotation + '"';
-          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-          return selector;
-        }
-        const selectCodeLines = (annoteEl) => {
-          const doc = window.document;
-          const targetCell = annoteEl.getAttribute("data-target-cell");
-          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-          const lineIds = lines.map((line) => {
-            return targetCell + "-" + line;
-          })
-          let top = null;
-          let height = null;
-          let parent = null;
-          if (lineIds.length > 0) {
-              //compute the position of the single el (top and bottom and make a div)
-              const el = window.document.getElementById(lineIds[0]);
-              top = el.offsetTop;
-              height = el.offsetHeight;
-              parent = el.parentElement.parentElement;
-            if (lineIds.length > 1) {
-              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-              height = bottom - top;
-            }
-            if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it 
-              let div = window.document.getElementById("code-annotation-line-highlight");
-              if (div === null) {
-                div = window.document.createElement("div");
-                div.setAttribute("id", "code-annotation-line-highlight");
-                div.style.position = 'absolute';
-                parent.appendChild(div);
-              }
-              div.style.top = top - 2 + "px";
-              div.style.height = height + 4 + "px";
-              div.style.left = 0;
-              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-              if (gutterDiv === null) {
-                gutterDiv = window.document.createElement("div");
-                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-                gutterDiv.style.position = 'absolute';
-                const codeCell = window.document.getElementById(targetCell);
-                const gutter = codeCell.querySelector('.code-annotation-gutter');
-                gutter.appendChild(gutterDiv);
-              }
-              gutterDiv.style.top = top - 2 + "px";
-              gutterDiv.style.height = height + 4 + "px";
-            }
-            selectedAnnoteEl = annoteEl;
-          }
-        };
-        const unselectCodeLines = () => {
-          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-          elementsIds.forEach((elId) => {
-            const div = window.document.getElementById(elId);
-            if (div) {
-              div.remove();
-            }
-          });
-          selectedAnnoteEl = undefined;
-        };
-          // Handle positioning of the toggle
-      window.addEventListener(
-        "resize",
-        throttle(() => {
-          elRect = undefined;
-          if (selectedAnnoteEl) {
-            selectCodeLines(selectedAnnoteEl);
-          }
-        }, 10)
-      );
-      function throttle(fn, ms) {
-      let throttle = false;
-      let timer;
-        return (...args) => {
-          if(!throttle) { // first call gets through
-              fn.apply(this, args);
-              throttle = true;
-          } else { // all the others get throttled
-              if(timer) clearTimeout(timer); // cancel #2
-              timer = setTimeout(() => {
-                fn.apply(this, args);
-                timer = throttle = false;
-              }, ms);
-          }
-        };
-      }
-        // Attach click handler to the DT
-        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-        for (const annoteDlNode of annoteDls) {
-          annoteDlNode.addEventListener('click', (event) => {
-            const clickedEl = event.target;
-            if (clickedEl !== selectedAnnoteEl) {
-              unselectCodeLines();
-              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-              if (activeEl) {
-                activeEl.classList.remove('code-annotation-active');
-              }
-              selectCodeLines(clickedEl);
-              clickedEl.classList.add('code-annotation-active');
-            } else {
-              // Unselect the line
-              unselectCodeLines();
-              clickedEl.classList.remove('code-annotation-active');
-            }
-          });
-        }
-    const findCites = (el) => {
-      const parentEl = el.parentElement;
-      if (parentEl) {
-        const cites = parentEl.dataset.cites;
-        if (cites) {
-          return {
-            el,
-            cites: cites.split(' ')
-          };
-        } else {
-          return findCites(el.parentElement)
-        }
-      } else {
-        return undefined;
-      }
-    };
-    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-    for (var i=0; i<bibliorefs.length; i++) {
-      const ref = bibliorefs[i];
-      const citeInfo = findCites(ref);
-      if (citeInfo) {
-        tippyHover(citeInfo.el, function() {
-          var popup = window.document.createElement('div');
-          citeInfo.cites.forEach(function(cite) {
-            var citeDiv = window.document.createElement('div');
-            citeDiv.classList.add('hanging-indent');
-            citeDiv.classList.add('csl-entry');
-            var biblioDiv = window.document.getElementById('ref-' + cite);
-            if (biblioDiv) {
-              citeDiv.innerHTML = biblioDiv.innerHTML;
-            }
-            popup.appendChild(citeDiv);
-          });
-          return popup.innerHTML;
-        });
-      }
-    }
-  });
-  </script>
-</div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
-      &nbsp;
-    </div>   
-    <div class="nav-footer-center">
-      <ul class="footer-items list-unstyled">
-    <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/alexantonison/">
-      <i class="bi bi-linkedin" role="img">
-</i> 
-    </a>
-  </li>  
-    <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/alex-antonison">
-      <i class="bi bi-github" role="img">
-</i> 
-    </a>
-  </li>  
-</ul>
     </div>
-    <div class="nav-footer-right">
-      &nbsp;
-    </div>
-  </div>
-</footer>
+  </article>
 
+  <section class="comments-section">
+    <h2>Comments</h2>
+    <script
+      src="https://giscus.app/client.js"
+      data-repo="alex-antonison/blog"
+      data-repo-id="R_kgDOId22nw"
+      data-category="Announcements"
+      data-category-id="DIC_kwDOId22n84C6EPV"
+      data-mapping="pathname"
+      data-strict="0"
+      data-reactions-enabled="1"
+      data-emit-metadata="0"
+      data-input-position="top"
+      data-theme="preferred_color_scheme"
+      data-lang="en"
+      data-loading="lazy"
+      crossorigin="anonymous"
+      async>
+    </script>
+  </section>
+</section>
 
-
-
-</body></html>
+    <footer id="contentinfo" class="body">
+      <address id="about" class="vcard body">
+        Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+        which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+      </address>
+    </footer>
+  </body>
+</html>
