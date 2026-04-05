@@ -1,9 +1,9 @@
 from __future__ import annotations
 
 AUTHOR = "Alex Antonison"
-SITENAME = "Alex Antonison's Blog"
+SITENAME = "A Thoughtful Data Nerd"
 SITEURL = ""
-SITESUBTITLE = "Data engineering, architecture, and practical delivery"
+SITESUBTITLE = "Data engineering, architecture, and technical leadership"
 TIMEZONE = "UTC"
 DEFAULT_LANG = "en"
 
@@ -40,8 +40,8 @@ DISPLAY_CATEGORIES_ON_MENU = False
 
 LINKS = ()
 SOCIAL = (
-    ("GitHub", "https://github.com/alex-antonison"),
     ("LinkedIn", "https://www.linkedin.com/in/alexantonison/"),
+    ("GitHub", "https://github.com/alex-antonison"),
 )
 
 THEME = "notmyidea"
@@ -53,7 +53,7 @@ MARKDOWN = {
         "markdown.extensions.codehilite": {"css_class": "highlight"},
         "markdown.extensions.extra": {},
         "markdown.extensions.meta": {},
-        "markdown.extensions.toc": {"permalink": "#"},
+        "markdown.extensions.toc": {"anchorlink": True, "permalink": False},
     },
     "output_format": "html5",
 }
@@ -61,9 +61,9 @@ MARKDOWN = {
 # Giscus comment integration for articles.
 GISCUS_ENABLED = True
 GISCUS_REPO = "alex-antonison/blog"
-GISCUS_REPO_ID = "REPLACE_WITH_REPO_ID"
+GISCUS_REPO_ID = "R_kgDOId22nw"
 GISCUS_CATEGORY = "Announcements"
-GISCUS_CATEGORY_ID = "REPLACE_WITH_CATEGORY_ID"
+GISCUS_CATEGORY_ID = "DIC_kwDOId22n84C6EPV"
 GISCUS_MAPPING = "pathname"
 GISCUS_STRICT = "0"
 GISCUS_REACTIONS_ENABLED = "1"

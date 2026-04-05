@@ -15,9 +15,23 @@
 
   <body id="index" class="home">
     <header id="banner" class="body">
-      <h1>
-        <a href="{{ SITEURL }}/">{{ SITENAME }}{% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a>
-      </h1>
+      <div class="banner-top">
+        <h1>
+          <a href="{{ SITEURL }}/">{{ SITENAME }}{% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a>
+        </h1>
+        {% if SOCIAL %}
+        <ul class="banner-socials" aria-label="Social links">
+          {% for name, link in SOCIAL %}
+          {% set social_key = name|lower %}
+          <li>
+            <a href="{{ link }}" class="social-icon social-icon-{{ social_key }}" aria-label="{{ name }}" title="{{ name }}" target="_blank" rel="noopener noreferrer">
+              <span class="sr-only">{{ name }}</span>
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
       {% if MENUITEMS %}
       <nav>
         <ul>
@@ -30,20 +44,6 @@
     </header>
 
     {% block content %}{% endblock %}
-
-    <section id="extras" class="body">
-      <div class="social">
-        <h2>social</h2>
-        <ul>
-          {% if FEED_ALL_ATOM %}
-          <li><a href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate">atom feed</a></li>
-          {% endif %}
-          {% for name, link in SOCIAL %}
-          <li><a href="{{ link }}">{{ name }}</a></li>
-          {% endfor %}
-        </ul>
-      </div>
-    </section>
 
     <footer id="contentinfo" class="body">
       <address id="about" class="vcard body">
