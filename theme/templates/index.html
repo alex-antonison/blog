@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block title %}{{ SITENAME }}{% endblock %}
+
+{% block content %}
+<section class="home-hero">
+  <div class="home-hero-grid">
+    <img src="{{ SITEURL }}/images/alex_headshot.jpg" alt="Alex Antonison" class="profile-pic" />
+    <div>
+      <h1>Alex Antonison</h1>
+      <p>
+        Hello, I’m Alex Antonison. A Data Engineer with 10+ years of experience delivering data-driven solutions across Government, Healthcare, and Environmental Science. I take a data product-oriented approach, working closely with stakeholders to define clear use cases and build solutions that drive meaningful outcomes. With a strong technical foundation, I can design and implement scalable data platforms that ensure data products are high-quality, timely, and easy to use.
+      </p>
+      <p>
+        My core strengths include technical leadership, mentoring, data platform architecture, hands-on delivery, strategic alignment of technical solutions with business objectives, and clear communication of complex concepts to diverse audiences.
+      </p>
+      <p>
+        Are you looking for a Data Engineer to help scale your data solutions? Feel free to reach out.
+        Email me at <a href="mailto:adantonison@gmail.com">adantonison@gmail.com</a>
+        or connect on <a href="https://www.linkedin.com/in/alexantonison/" target="_blank" rel="noopener noreferrer">linkedin.com/in/alexantonison/</a>
+        if you'd like to chat!
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="content">
+  <h2>Blog Posts</h2>
+  {% if articles %}
+  <ol id="post-list" class="post-list-compact">
+    {% for article in (articles_page.object_list if articles_page else articles) %}
+    <li>
+      <article class="hentry post-item">
+        <header class="post-item-header">
+          <h3 class="post-item-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h3>
+          <div class="post-meta post-item-date">{{ article.locale_date }}</div>
+        </header>
+      </article>
+    </li>
+    {% endfor %}
+  </ol>
+  {% else %}
+  <p>No posts yet.</p>
+  {% endif %}
+
+  {% if articles_page and articles_paginator.num_pages > 1 %}
+  <p class="paginator">
+    {% if articles_page.has_previous() %}
+    <a href="{{ SITEURL }}/{{ articles_previous_page.url }}">Newer posts</a>
+    {% endif %}
+    {% if articles_page.has_next() %}
+    <a href="{{ SITEURL }}/{{ articles_next_page.url }}">Older posts</a>
+    {% endif %}
+  </p>
+  {% endif %}
+</section>
+{% endblock %}

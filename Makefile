@@ -1,5 +1,8 @@
-preview:
-	quarto preview .
+dev:
+	uv run pelican --listen --autoreload
 
-publish:
-	quarto publish gh-pages --no-prompt
+build:
+	uv run pelican content -s publishconf.py -o output
+
+clean:
+	rm -rf output

@@ -1,0 +1,10 @@
+[project]
+name = "alex-antonison-blog"
+version = "0.1.0"
+description = "Pelican source for alex-antonison.com"
+requires-python = ">=3.14.0, <3.15"
+dependencies = [
+    "ghp-import==2.1.0",
+    "Markdown==3.8.2",
+    "pelican[markdown]==4.11.0",
+]
