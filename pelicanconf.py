@@ -3,7 +3,7 @@ from __future__ import annotations
 AUTHOR = "Alex Antonison"
 SITENAME = "A Thoughtful Data Nerd"
 SITEURL = ""
-SITESUBTITLE = "Data engineering, architecture, and technical leadership"
+SITESUBTITLE = "Data engineering, architecture, and leadership"
 TIMEZONE = "UTC"
 DEFAULT_LANG = "en"
 
